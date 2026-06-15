@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Patrick San — Chef, pescador profissional e produtor artesanal de Cananéia e Ilha Comprida. Experiências, cursos, mentorias, Namazuko e parcerias no território do Lagamar.">
+  <meta property="og:title" content="Patrick San — Do Lagamar para a mesa">
+  <meta property="og:description" content="Experiências, cursos e mentorias, Namazuko e parcerias — um ecossistema profissional nascido do território de Cananéia e Ilha Comprida.">
+  <meta property="og:image" content="assets/images/hero-foto-lagamar-fallback.jpg">
+  <title>Patrick San — Do Lagamar para a mesa</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='26' font-size='28'>🐟</text></svg>">
+</head>
+<body>
+
+<!-- ══════════════════════════════════════════════
+     WHATSAPP FLOAT
+     ══════════════════════════════════════════════ -->
+<a href="https://wa.me/55XXXXXXXXXXX" class="wa-float" title="Falar com Patrick San" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <!-- VALIDAR COM PATRICK: número de WhatsApp -->
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+  </svg>
+</a>
+
+<!-- ══════════════════════════════════════════════
+     NAVIGATION
+     Ordem: Território → Patrick San → Experiências →
+     Cursos & Mentorias → Namazuko → Parcerias → Diário do Lagamar
+     ══════════════════════════════════════════════ -->
+<nav class="nav" id="main-nav" role="navigation" aria-label="Navegação principal">
+  <a href="index.html" class="nav__logo">Patrick <span>San</span></a>
+
+  <div class="nav__links" role="menubar">
+    <a href="pages/territorio.html" class="nav__link" role="menuitem">Território</a>
+    <a href="pages/patrick-san.html" class="nav__link" role="menuitem">Patrick San</a>
+    <a href="pages/experiencias.html" class="nav__link" role="menuitem">Experiências</a>
+    <a href="pages/cursos-mentorias.html" class="nav__link" role="menuitem">Cursos &amp; Mentorias</a>
+    <a href="pages/namazuko.html" class="nav__link" role="menuitem">Namazuko</a>
+    <a href="pages/parcerias.html" class="nav__link" role="menuitem">Parcerias</a>
+    <a href="pages/diario-do-lagamar.html" class="nav__link" role="menuitem">Diário do Lagamar</a>
+    <a href="pages/contato.html" class="nav__cta">Contato</a>
+  </div>
+
+  <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav-mobile">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<nav class="nav__mobile" id="nav-mobile" aria-label="Menu mobile">
+  <a href="pages/territorio.html" class="nav__link">Território</a>
+  <a href="pages/patrick-san.html" class="nav__link">Patrick San</a>
+  <a href="pages/experiencias.html" class="nav__link">Experiências</a>
+  <a href="pages/cursos-mentorias.html" class="nav__link">Cursos &amp; Mentorias</a>
+  <a href="pages/namazuko.html" class="nav__link">Namazuko</a>
+  <a href="pages/parcerias.html" class="nav__link">Parcerias</a>
+  <a href="pages/diario-do-lagamar.html" class="nav__link">Diário do Lagamar</a>
+  <a href="pages/contato.html" class="nav__cta">Contato</a>
+</nav>
+
+<!-- ══════════════════════════════════════════════
+     1. HERO
+     [VÍDEO] hero-video-lagamar.mp4
+     [FOTO fallback] hero-foto-lagamar-fallback.jpg
+     ══════════════════════════════════════════════ -->
+<section class="hero" id="hero" aria-label="Introdução">
+  <div class="hero__media" aria-hidden="true">
+    <video
+      class="hero__video"
+      src="assets/videos/hero-video-lagamar.mp4"
+      poster="assets/images/hero-foto-lagamar-fallback.jpg"
+      autoplay muted loop playsinline
+      preload="none"
+      aria-hidden="true">
+    </video>
+    <img
+      class="hero__video-fallback"
+      src="assets/images/hero-foto-lagamar-fallback.jpg"
+      alt=""
+      style="display:none"
+      aria-hidden="true">
+    <div class="hero__media--fallback" aria-hidden="true"></div>
+  </div>
+  <div class="hero__overlay" aria-hidden="true"></div>
+
+  <div class="hero__content">
+    <span class="hero__eyebrow reveal">Cananéia · Ilha Comprida · Litoral Sul de São Paulo</span>
+    <h1 class="hero__title reveal reveal-delay-1">
+      Do Lagamar<br>para a <em>mesa.</em>
+    </h1>
+    <p class="hero__sub reveal reveal-delay-2">
+      Patrick San é chef e pescador profissional. Experiências, cursos e mentorias, criações autorais e parcerias — um ecossistema nascido do território de Cananéia e Ilha Comprida.
+    </p>
+    <div class="hero__actions reveal reveal-delay-3">
+      <a href="pages/experiencias.html" class="btn btn--primary">Ver experiências</a>
+      <a href="pages/patrick-san.html" class="btn btn--ghost-lt">Conhecer Patrick San</a>
+    </div>
+  </div>
+
+  <div class="hero__location" aria-hidden="true">
+    <span>Cananéia</span>
+    <span>Ilha Comprida</span>
+    <span>25° 00' S · 47° 55' W</span>
+  </div>
+
+  <div class="hero__scroll" aria-hidden="true">
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     2. TERRITÓRIO (compacto — fundação, não frente)
+     [FOTO] territorio-aerea-canania-ilha-comprida.jpg
+     ══════════════════════════════════════════════ -->
+<div id="territorio">
+  <div class="split">
+
+    <div class="split__image split__image--dark" aria-hidden="true">
+      <img
+        src="assets/images/territorio-aerea-canania-ilha-comprida.jpg"
+        alt="Vista aérea de Cananéia e Ilha Comprida — complexo estuarino do Lagamar"
+        loading="lazy">
+      <span class="split__image__caption">Complexo estuarino do Lagamar · Cananéia e Ilha Comprida</span>
+    </div>
+
+    <div class="split__content split__content--light">
+      <span class="t-eyebrow reveal">A fundação</span>
+      <h2 class="t-display reveal reveal-delay-1" style="font-size:clamp(34px,4.5vw,56px);margin-top:14px">
+        O território<br><em>que sustenta</em><br>tudo.
+      </h2>
+      <div class="divider reveal reveal-delay-2"></div>
+      <p class="t-body reveal reveal-delay-2" style="max-width:460px">
+        Cananéia e Ilha Comprida formam um dos maiores complexos estuarinos contínuos do litoral brasileiro, reconhecido pela UNESCO como Patrimônio da Humanidade. O Lagamar não é cenário — é a origem de cada experiência, cada curso, cada criação que nascem do trabalho de Patrick San.
+      </p>
+      <div class="mt-lg reveal reveal-delay-3">
+        <a href="pages/territorio.html" class="btn btn--primary">Conhecer o território</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     3. PATRICK SAN (apresentação da pessoa)
+     [FOTO] patrick-retrato-home.jpg
+     ══════════════════════════════════════════════ -->
+<div id="patrick">
+  <div class="split split--reverse">
+
+    <div class="split__content split__content--dark">
+      <span class="t-eyebrow reveal">Chef · Pescador profissional · Educador</span>
+      <h2 class="t-display reveal reveal-delay-1" style="font-size:clamp(34px,4.5vw,56px);color:var(--c-creme);margin-top:14px">
+        Pescador<br><em>antes de chef.</em>
+      </h2>
+      <div class="divider divider--lt reveal reveal-delay-2"></div>
+      <p class="t-body reveal reveal-delay-2" style="max-width:440px;color:rgba(245,240,230,.62)">
+        Patrick San cresceu entre as águas de Cananéia e Ilha Comprida. Da pesca artesanal à alta gastronomia, do barco à sala de aula — seu trabalho conecta o conhecimento do território a quem quer vivê-lo, aprendê-lo ou se associar a ele.
+      </p>
+      <div class="mt-lg reveal reveal-delay-3">
+        <a href="pages/patrick-san.html" class="btn btn--primary">Conhecer a história completa</a>
+      </div>
+    </div>
+
+    <!-- [FOTO] patrick-retrato-home.jpg -->
+    <div class="split__image split__image--mangue" aria-hidden="true">
+      <img
+        src="assets/images/patrick-retrato-home.jpg"
+        alt="Patrick San — chef e pescador profissional"
+        loading="lazy">
+      <span class="split__image__caption">Patrick San · Cananéia · São Paulo</span>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- ══════════════════════════════════════════════
+     4. EXPERIÊNCIAS (PRIORIDADE 1 — maior destaque)
+     Escada de valor: Caiçaras → Especiais → Vivência Completa
+     [FOTO] experiencias-caicaras-destaque.jpg
+     [FOTO] experiencias-especiais-destaque.jpg
+     [FOTO] vivencia-caicara-completa-destaque.jpg
+     ══════════════════════════════════════════════ -->
+<section class="frente-block frente-block--light" id="experiencias">
+
+  <div class="frente-header">
+    <div>
+      <span class="frente-header__priority reveal">Prioridade 1 · A frente principal</span>
+      <h2 class="t-display reveal reveal-delay-1" style="font-size:clamp(34px,4.5vw,58px);margin-top:6px">
+        Experiências<br>no <em>Lagamar.</em>
+      </h2>
+      <p class="t-body reveal reveal-delay-2 mt-md" style="max-width:520px">
+        Uma escada de profundidade crescente — do primeiro contato com a pesca artesanal até a imersão completa no cotidiano do território.
+      </p>
+    </div>
+    <div class="reveal">
+      <a href="pages/experiencias.html" class="btn--text btn--text-dk">Ver todas as experiências</a>
+    </div>
+  </div>
+
+  <div class="escada">
+
+    <!-- Experiências Caiçaras -->
+    <article class="escada__item reveal">
+      <div class="escada__bg">
+        <img src="assets/images/experiencias-caicaras-destaque.jpg" alt="Experiências Caiçaras — Rota da Pesca Artesanal, Pesca Submarina em Apneia, Rota das Ostras, Comunidades Tradicionais, Enseada da Baleia" loading="lazy">
+      </div>
+      <div class="escada__info">
+        <span class="escada__tier">Nível de entrada</span>
+        <h3 class="escada__title">Experiências Caiçaras</h3>
+        <p class="escada__desc">O primeiro contato com o território através da pesca, da gastronomia e da cultura local.</p>
+        <div class="escada__list">
+          <span>Rota da Pesca Artesanal</span>
+          <span>Pesca Submarina em Apneia</span>
+          <span>Rota das Ostras</span>
+          <span>Comunidades Tradicionais</span>
+          <span>Enseada da Baleia</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Experiências Especiais -->
+    <article class="escada__item reveal reveal-delay-1">
+      <div class="escada__bg">
+        <img src="assets/images/experiencias-especiais-destaque.jpg" alt="Experiências Especiais — Rota Gastronômica do Lagamar" loading="lazy">
+      </div>
+      <div class="escada__info">
+        <span class="escada__tier">Nível intermediário</span>
+        <h3 class="escada__title">Experiências Especiais</h3>
+        <p class="escada__desc">Um aprofundamento gastronômico guiado por Patrick, com narrativa prato a prato.</p>
+        <div class="escada__list">
+          <span>Rota Gastronômica do Lagamar</span>
+        </div>
+      </div>
+    </article>
+
+    <!-- Vivência Caiçara Completa — topo, destaque máximo -->
+    <article class="escada__item escada__item--top reveal reveal-delay-2">
+      <div class="escada__bg">
+        <img src="assets/images/vivencia-caicara-completa-destaque.jpg" alt="Vivência Caiçara Completa — a experiência mais completa do território" loading="lazy">
+      </div>
+      <div class="escada__info">
+        <span class="escada__tier">Experiência premium · Topo da jornada</span>
+        <h3 class="escada__title">Vivência Caiçara Completa</h3>
+        <p class="escada__desc">Dias inteiros vivendo o cotidiano de Patrick — pesca, produção, território e comunidade. A forma mais profunda de conhecer o Lagamar.</p>
+      </div>
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     5. CURSOS & MENTORIAS (PRIORIDADE 2 — peso equivalente)
+     [FOTO] cursos-online-destaque.jpg
+     [FOTO] cursos-presenciais-destaque.jpg
+     [FOTO] treinamentos-restaurantes-destaque.jpg
+     [FOTO] mentorias-destaque.jpg
+     ══════════════════════════════════════════════ -->
+<section class="frente-block frente-block--dark" id="cursos">
+
+  <div class="frente-header">
+    <div>
+      <span class="frente-header__priority reveal">Prioridade 2 · Conhecimento que se transmite</span>
+      <h2 class="t-display reveal reveal-delay-1" style="font-size:clamp(34px,4.5vw,58px);color:var(--c-creme);margin-top:6px">
+        Cursos &amp;<br><em>Mentorias.</em>
+      </h2>
+      <p class="t-body reveal reveal-delay-2 mt-md" style="max-width:520px">
+        Patrick não apenas vive o território — ele transmite o conhecimento acumulado em décadas de pesca, produção e gastronomia.
+      </p>
+    </div>
+    <div class="reveal">
+      <a href="pages/cursos-mentorias.html" class="btn--text">Conhecer cursos e mentorias</a>
+    </div>
+  </div>
+
+  <div class="produto-grid">
+
+    <article class="produto-card produto-card--featured reveal">
+      <div class="produto-card__bg" style="background:linear-gradient(145deg,#1a2418,#2c3c24,#1e2c18)">
+        <img src="assets/images/cursos-online-destaque.jpg" alt="Cursos Online — técnicas de sashimi, sushi, maturação de peixes e pescados da costa brasileira" loading="lazy">
+      </div>
+      <div class="produto-card__info">
+        <span class="produto-card__cat">Cursos Online</span>
+        <h3 class="produto-card__name">Técnica ao seu alcance</h3>
+        <p class="produto-card__desc">Sashimi, sushi, maturação de peixes e o conhecimento aplicado aos pescados da costa brasileira — em formato online.</p>
+      </div>
+    </article>
+
+    <article class="produto-card reveal reveal-delay-1">
+      <div class="produto-card__bg" style="background:linear-gradient(145deg,#241c14,#3c2c1c,#2c2014)">
+        <img src="assets/images/cursos-presenciais-destaque.jpg" alt="Cursos Presenciais em Cananéia" loading="lazy">
+      </div>
+      <div class="produto-card__info">
+        <span class="produto-card__cat">Cursos Presenciais</span>
+        <h3 class="produto-card__name">Em Cananéia</h3>
+        <p class="produto-card__desc">Imersões presenciais no território, com o ambiente de trabalho de Patrick como sala de aula.</p>
+      </div>
+    </article>
+
+    <article class="produto-card reveal reveal-delay-2">
+      <div class="produto-card__bg" style="background:linear-gradient(145deg,#14201c,#243c30,#182c24)">
+        <img src="assets/images/treinamentos-restaurantes-destaque.jpg" alt="Treinamentos para Restaurantes" loading="lazy">
+      </div>
+      <div class="produto-card__info">
+        <span class="produto-card__cat">Treinamentos</span>
+        <h3 class="produto-card__name">Para Restaurantes</h3>
+        <p class="produto-card__desc">Capacitação de equipes profissionais em técnicas de pescado.</p>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="text-center mt-lg reveal">
+    <a href="pages/cursos-mentorias.html" class="btn btn--primary">Conhecer cursos e mentorias</a>
+  </div>
+
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     6. NAMAZUKO (PRIORIDADE 3 — presença, não centro)
+     [FOTO] namazuko-macro-01.jpg
+     ══════════════════════════════════════════════ -->
+<section class="frente-block frente-block--creme" id="namazuko">
+
+  <div class="frente-compact">
+
+    <div class="reveal">
+      <span class="frente-header__priority" style="color:var(--c-areia-dk)">Prioridade 3 · Criação autoral</span>
+      <h2 class="t-display" style="font-size:clamp(32px,4vw,52px);margin-top:6px">Namazuko.</h2>
+      <div class="divider"></div>
+      <p class="t-body" style="max-width:420px">
+        Uma criação exclusiva — resultado do conhecimento acumulado sobre o território, a pesca e a técnica. Não é apenas um produto: é a prova de como conhecimento territorial se traduz em gastronomia.
+      </p>
+      <div class="frente-compact__points">
+        <div class="frente-compact__point">
+          <span class="frente-compact__point-label">Origem</span>
+          <span class="frente-compact__point-text">Ovas de bagre branco, espécie nativa do Lagamar, curadas artesanalmente em Cananéia.</span>
+        </div>
+        <div class="frente-compact__point">
+          <span class="frente-compact__point-label">Aplicação</span>
+          <span class="frente-compact__point-text">Utilizada por restaurantes de alta gastronomia em diferentes regiões do Brasil.</span>
+        </div>
+        <div class="frente-compact__point">
+          <span class="frente-compact__point-label">Fornecimento</span>
+          <span class="frente-compact__point-text">Disponível para restaurantes e chefs sob consulta.</span>
+        </div>
+      </div>
+      <div class="mt-lg">
+        <a href="pages/namazuko.html" class="btn btn--primary">Conhecer o Namazuko</a>
+      </div>
+    </div>
+
+    <!-- [FOTO] namazuko-macro-01.jpg -->
+    <div class="reveal reveal-delay-1">
+      <img class="frente-compact__img" src="assets/images/namazuko-macro-01.jpg" alt="Namazuko — ovas de bagre branco curadas artesanalmente">
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     7. PARCERIAS (PRIORIDADE 4 — ecossistema institucional)
+     [FOTO] parcerias-hero-territorio.jpg
+     ══════════════════════════════════════════════ -->
+<section class="frente-block frente-block--dark" id="parcerias">
+
+  <div class="split" style="margin: -96px calc(-1 * var(--pad-x)); min-height: auto">
+    <div class="split__image" aria-hidden="true" style="min-height:420px">
+      <img src="assets/images/parcerias-hero-territorio.jpg" alt="Ecossistema de parcerias de Patrick San" loading="lazy">
+    </div>
+    <div class="split__content split__content--dark">
+      <span class="frente-header__priority reveal">Prioridade 4 · Um ecossistema de colaboração</span>
+      <h2 class="t-display reveal reveal-delay-1" style="font-size:clamp(32px,4vw,52px);color:var(--c-creme);margin-top:6px">
+        Parcerias.
+      </h2>
+      <div class="divider divider--lt reveal reveal-delay-2"></div>
+      <p class="t-body reveal reveal-delay-2" style="max-width:440px;color:rgba(245,240,230,.6)">
+        Restaurantes, hotéis e pousadas, marcas, projetos especiais, eventos, imprensa, turismo e projetos culturais — Patrick San colabora com quem compartilha a mesma relação de respeito com o território.
+      </p>
+      <div class="mt-lg reveal reveal-delay-3">
+        <a href="pages/parcerias.html" class="btn btn--primary">Ver oportunidades de parceria</a>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     8. DIÁRIO DO LAGAMAR (camada editorial transversal)
+     [FOTO] editorial-pesca-tainha-rede.jpg
+     [FOTO] editorial-bastidores-producao.jpg
+     [FOTO] editorial-bagre-branco-gelo.jpg
+     ══════════════════════════════════════════════ -->
+<section class="section-pad" id="diario" style="background:var(--c-off)">
+
+  <div class="section-header">
+    <div class="section-header__main">
+      <span class="t-eyebrow reveal">Plataforma editorial</span>
+      <h2 class="t-display reveal reveal-delay-1" style="font-size:clamp(34px,4.5vw,56px);margin-top:14px">
+        Diário do<br><em>Lagamar.</em>
+      </h2>
+    </div>
+    <div class="section-header__action reveal">
+      <a href="pages/diario-do-lagamar.html" class="btn--text btn--text-dk">Explorar o Diário do Lagamar</a>
+    </div>
+  </div>
+
+  <div class="editorial-grid">
+
+    <article class="ed-card ed-card--featured reveal">
+      <div class="ed-card__bg ed-card__bg--1">
+        <img src="assets/images/editorial-pesca-tainha-rede.jpg" alt="A pesca da tainha e o conhecimento do mar" loading="lazy">
+      </div>
+      <div class="ed-card__info">
+        <span class="ed-card__cat">Cultura Caiçara</span>
+        <h3 class="ed-card__title">A pesca da tainha e o conhecimento que o mar ensinou</h3>
+        <span class="ed-card__date">Cananéia · Lagamar</span>
+        <div class="article-card__tags">
+          <span>Território</span>
+          <span>Experiências</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="ed-card reveal reveal-delay-1">
+      <div class="ed-card__bg ed-card__bg--2">
+        <img src="assets/images/editorial-bastidores-producao.jpg" alt="O processo das Namazuko" loading="lazy">
+      </div>
+      <div class="ed-card__info">
+        <span class="ed-card__cat">Bastidores da Produção</span>
+        <h3 class="ed-card__title">Da ova ao produto: o processo das Namazuko</h3>
+        <span class="ed-card__date">Cananéia · Namazuko</span>
+        <div class="article-card__tags">
+          <span>Namazuko</span>
+          <span>Cursos</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="ed-card reveal reveal-delay-2">
+      <div class="ed-card__bg ed-card__bg--3">
+        <img src="assets/images/editorial-bagre-branco-gelo.jpg" alt="Bagre branco — espécie do estuário" loading="lazy">
+      </div>
+      <div class="ed-card__info">
+        <span class="ed-card__cat">Espécies do Estuário</span>
+        <h3 class="ed-card__title">Bagre branco: o peixe que a gastronomia ainda não conhece</h3>
+        <span class="ed-card__date">Lagamar · Pesca artesanal</span>
+        <div class="article-card__tags">
+          <span>Território</span>
+          <span>Namazuko</span>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <p style="font-size:11px;font-style:italic;color:var(--c-txt-t);margin-top:28px;text-align:center">
+    Artigos a publicar na primeira versão — conteúdo a desenvolver com Patrick San.
+  </p>
+
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     9. NEWSLETTER
+     ══════════════════════════════════════════════ -->
+<section class="newsletter" id="newsletter">
+  <span class="t-eyebrow text-center reveal" style="display:block;margin-bottom:12px">Diário do Lagamar</span>
+  <h2 class="t-display newsletter__title reveal reveal-delay-1" style="font-size:clamp(30px,4vw,50px)">
+    Histórias, conhecimento<br><em>e bastidores.</em>
+  </h2>
+  <p class="newsletter__sub reveal reveal-delay-2">
+    Uma vez por mês — o que acontece no Lagamar, direto de Cananéia e Ilha Comprida.
+  </p>
+  <form class="newsletter__form reveal reveal-delay-3" id="newsletter-form" novalidate>
+    <input type="email" name="email" class="newsletter__input" placeholder="Seu e-mail" required aria-label="Seu e-mail">
+    <button type="submit" class="newsletter__submit">Assinar</button>
+  </form>
+  <p class="newsletter__nota reveal">Sem spam. Cancele quando quiser.</p>
+</section>
+
+
+<!-- ══════════════════════════════════════════════
+     10. FOOTER
+     ══════════════════════════════════════════════ -->
+<footer class="footer" id="footer" role="contentinfo">
+  <div class="footer__grid">
+
+    <div>
+      <span class="footer__brand-name">Patrick <span>San</span></span>
+      <p class="footer__brand-desc">Chef, pescador profissional e produtor artesanal. Cananéia e Ilha Comprida, litoral sul de São Paulo.</p>
+      <address class="footer__brand-address">
+        Cananéia · São Paulo · Brasil<br>
+        <!-- VALIDAR COM PATRICK: endereço ou ponto de referência para contato -->
+      </address>
+    </div>
+
+    <nav class="footer__col" aria-label="Links do site">
+      <span class="footer__col-title">Navegação</span>
+      <a href="pages/territorio.html">Território</a>
+      <a href="pages/patrick-san.html">Patrick San</a>
+      <a href="pages/experiencias.html">Experiências</a>
+      <a href="pages/cursos-mentorias.html">Cursos &amp; Mentorias</a>
+      <a href="pages/namazuko.html">Namazuko</a>
+    </nav>
+
+    <nav class="footer__col" aria-label="Ecossistema">
+      <span class="footer__col-title">Ecossistema</span>
+      <a href="pages/parcerias.html">Parcerias</a>
+      <a href="pages/diario-do-lagamar.html">Diário do Lagamar</a>
+      <a href="pages/contato.html">Contato</a>
+    </nav>
+
+  </div>
+
+  <div class="footer__bottom">
+    <span class="footer__copy">© <span id="footer-year"></span> Patrick San · Cananéia, São Paulo</span>
+    <div class="footer__social">
+      <!-- VALIDAR COM PATRICK: URLs definitivas -->
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/script.js"></script>
+</body>
+</html>
