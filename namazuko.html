@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Namazuko — ovas de bagre branco curadas artesanalmente por Patrick San em Cananéia. Uma criação autoral nascida do conhecimento sobre o território do Lagamar.">
+  <meta property="og:title" content="Namazuko — Patrick San">
+  <meta property="og:image" content="../assets/images/namazuko-macro-01.jpg">
+  <title>Namazuko — Criação autoral | Patrick San</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .nz-section { padding: var(--sp-2xl) var(--pad-x); }
+    .nz-section--light { background: var(--c-off); }
+    .nz-section--dark { background: var(--c-mangue); }
+    .nz-section--creme { background: var(--c-creme); }
+    .nz-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; max-width: var(--max-w); margin: 0 auto; }
+    .nz-img { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; }
+    .nz-img-sm { width: 100%; aspect-ratio: 1/1; object-fit: cover; display: block; }
+    .nz-pair { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: var(--max-w); margin: 0 auto; }
+    .nz-quote { font-family: var(--f-display); font-size: clamp(20px,2.4vw,30px); font-weight: 300; font-style: italic; line-height: 1.5; color: var(--c-txt); border-left: 2px solid var(--c-areia); padding-left: 24px; margin: 24px 0 32px; }
+    @media(max-width:768px){
+      .nz-grid, .nz-pair { grid-template-columns: 1fr; gap: 32px; }
+    }
+  </style>
+</head>
+<body>
+
+<a href="https://wa.me/55XXXXXXXXXXX" class="wa-float" title="Falar com Patrick San" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<nav class="nav" id="main-nav">
+  <a href="../index.html" class="nav__logo">Patrick <span>San</span></a>
+  <div class="nav__links">
+    <a href="territorio.html" class="nav__link">Território</a>
+    <a href="patrick-san.html" class="nav__link">Patrick San</a>
+    <a href="experiencias.html" class="nav__link">Experiências</a>
+    <a href="cursos-mentorias.html" class="nav__link">Cursos &amp; Mentorias</a>
+    <a href="namazuko.html" class="nav__link active">Namazuko</a>
+    <a href="parcerias.html" class="nav__link">Parcerias</a>
+    <a href="diario-do-lagamar.html" class="nav__link">Diário do Lagamar</a>
+    <a href="contato.html" class="nav__cta">Contato</a>
+  </div>
+  <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<nav class="nav__mobile" id="nav-mobile">
+  <a href="territorio.html" class="nav__link">Território</a>
+  <a href="patrick-san.html" class="nav__link">Patrick San</a>
+  <a href="experiencias.html" class="nav__link">Experiências</a>
+  <a href="cursos-mentorias.html" class="nav__link">Cursos &amp; Mentorias</a>
+  <a href="namazuko.html" class="nav__link">Namazuko</a>
+  <a href="parcerias.html" class="nav__link">Parcerias</a>
+  <a href="diario-do-lagamar.html" class="nav__link">Diário do Lagamar</a>
+  <a href="contato.html" class="nav__cta">Contato</a>
+</nav>
+
+<!-- HERO
+     [FOTO] namazuko-hero.jpg (ou reuso de namazuko-macro-01.jpg) -->
+<div class="page-hero" style="margin-top:64px">
+  <div class="page-hero__media" style="background:linear-gradient(145deg,#1e1208,#2e1c0c,#241408)">
+    <img src="../assets/images/namazuko-hero.jpg" alt="Namazuko — ovas de bagre branco curadas artesanalmente" loading="eager">
+  </div>
+  <div class="page-hero__overlay"></div>
+  <div class="page-hero__content">
+    <span class="page-hero__eyebrow">Criação autoral · Cananéia</span>
+    <h1 class="page-hero__title">Namazuko.</h1>
+  </div>
+</div>
+
+
+<!-- ════════════════════════════════════
+     O PRODUTO
+     [FOTO] namazuko-embalagem.jpg
+     [FOTO] namazuko-produto-aberto.jpg
+     [FOTO] namazuko-uso-gastronomico.jpg
+     ════════════════════════════════════ -->
+<section class="nz-section nz-section--light">
+  <div class="nz-grid">
+    <div class="reveal">
+      <span class="t-eyebrow">Uma das frentes do ecossistema</span>
+      <h2 class="t-display" style="font-size:clamp(34px,4.5vw,54px);margin-top:14px">O produto.</h2>
+      <div class="divider"></div>
+      <blockquote class="nz-quote">Ovas de bagre branco curadas artesanalmente — resultado do conhecimento acumulado sobre o território, a pesca e a técnica.</blockquote>
+      <p class="t-body" style="max-width:440px">Namazuko não é apenas um produto: é a prova de como conhecimento territorial pode se traduzir em criação gastronômica autoral. Produzido em Cananéia, é hoje utilizado por restaurantes de alta gastronomia em diferentes regiões do Brasil.</p>
+    </div>
+    <!-- [FOTO] namazuko-embalagem.jpg -->
+    <div class="reveal reveal-delay-1">
+      <img class="nz-img" src="../assets/images/namazuko-embalagem.jpg" alt="Frasco de Namazuko — ovas de bagre branco curadas">
+    </div>
+  </div>
+</section>
+
+<!-- Pair: produto aberto + uso gastronômico -->
+<section class="nz-section nz-section--dark">
+  <div class="nz-pair">
+    <!-- [FOTO] namazuko-produto-aberto.jpg -->
+    <div class="reveal">
+      <img class="nz-img-sm" src="../assets/images/namazuko-produto-aberto.jpg" alt="Namazuko servida — textura das ovas curadas">
+      <p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,240,230,.35);margin-top:12px">O produto</p>
+    </div>
+    <!-- [FOTO] namazuko-uso-gastronomico.jpg -->
+    <div class="reveal reveal-delay-1">
+      <img class="nz-img-sm" src="../assets/images/namazuko-uso-gastronomico.jpg" alt="Namazuko utilizada em prato de alta gastronomia">
+      <p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,240,230,.35);margin-top:12px">Na cozinha profissional</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     ORIGEM TERRITORIAL
+     [FOTO] especie-bagre-branco.jpg (reuso de Território)
+     ════════════════════════════════════ -->
+<section class="nz-section nz-section--creme">
+  <div class="nz-grid">
+    <div class="reveal" style="order:2">
+      <span class="t-eyebrow">Do estuário ao frasco</span>
+      <h2 class="t-display" style="font-size:clamp(30px,4vw,48px);margin-top:14px">Origem<br><em>territorial.</em></h2>
+      <div class="divider"></div>
+      <p class="t-body" style="max-width:440px">As ovas de bagre branco — espécie nativa do estuário de Cananéia — raramente recebiam aproveitamento gastronômico relevante na pesca artesanal. Patrick desenvolveu um processo próprio de cura, inspirado em referências orientais, adaptado ao território onde nasceu e trabalha.</p>
+      <div class="mt-lg">
+        <a href="territorio.html" class="btn--text btn--text-dk">Conhecer o território</a>
+      </div>
+    </div>
+    <!-- [FOTO] especie-bagre-branco.jpg -->
+    <div class="reveal reveal-delay-1" style="order:1">
+      <img class="nz-img" src="../assets/images/especie-bagre-branco.jpg" alt="Bagre branco — espécie do estuário do Lagamar, origem do Namazuko">
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     O PROCESSO
+     [VÍDEO] namazuko-processo-video.mp4
+     ════════════════════════════════════ -->
+<section class="nz-section nz-section--dark">
+  <div style="max-width:var(--max-w);margin:0 auto">
+    <div class="reveal" style="max-width:560px">
+      <span class="t-eyebrow">O processo</span>
+      <h2 class="t-display" style="font-size:clamp(28px,3.5vw,44px);color:var(--c-creme);margin-top:14px">Cura artesanal,<br><em>etapa por etapa.</em></h2>
+      <div class="divider divider--lt"></div>
+      <p class="t-body" style="color:rgba(245,240,230,.6)">[VALIDAR COM PATRICK: descrição do processo de cura — etapas, tempo e técnica para texto definitivo.]</p>
+    </div>
+
+    <!-- [VÍDEO] namazuko-processo-video.mp4 -->
+    <div class="mt-xl reveal" style="position:relative;aspect-ratio:16/9;max-width:880px;overflow:hidden;background:linear-gradient(145deg,#2a1608,#5a3418,#3e1e08)">
+      <video src="../assets/videos/namazuko-processo-video.mp4"
+        poster="../assets/images/namazuko-produto-aberto.jpg"
+        muted loop playsinline controls preload="none"
+        style="width:100%;height:100%;object-fit:cover"></video>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     FORNECIMENTO PARA RESTAURANTES
+     [FOTO] contato-b2b-produto-cozinha-profissional.jpg
+     ════════════════════════════════════ -->
+<section class="nz-section nz-section--creme">
+  <div class="nz-grid">
+    <div class="reveal">
+      <span class="t-eyebrow">Restaurantes &amp; Chefs</span>
+      <h2 class="t-display" style="font-size:clamp(30px,4vw,48px);margin-top:14px">Fornecimento<br><em>para cozinhas profissionais.</em></h2>
+      <div class="divider"></div>
+      <p class="t-body" style="max-width:420px">Namazuko está presente em restaurantes de alta gastronomia em diferentes regiões do Brasil. Para encomendas, parcerias ou informações sobre fornecimento regular, entre em contato diretamente.</p>
+      <div class="mt-lg">
+        <a href="contato.html#fornecimento" class="btn btn--primary">Solicitar fornecimento</a>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <img class="nz-img" src="../assets/images/contato-b2b-produto-cozinha-profissional.jpg" alt="Namazuko em cozinha profissional">
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     PONTE — conhecimento e experiência relacionados
+     ════════════════════════════════════ -->
+<section class="ponte">
+  <span class="ponte__eyebrow reveal">Uma frente entre quatro</span>
+  <h2 class="ponte__title reveal reveal-delay-1">Conhecimento e <em>experiência</em> relacionados.</h2>
+  <p class="t-body reveal reveal-delay-2" style="max-width:480px;margin:0 auto">O Namazuko é uma demonstração — mas não a única — do que o conhecimento sobre este território pode gerar.</p>
+  <div class="ponte__links reveal reveal-delay-3">
+    <a href="cursos-mentorias.html#cursos-online" class="ponte__link">
+      <span class="ponte__link-icon">01</span>
+      <span class="ponte__link-label">Maturação de Peixes</span>
+      <span class="ponte__link-sub">O curso que ensina a técnica por trás desta criação</span>
+    </a>
+    <a href="experiencias.html#rota-pesca-artesanal" class="ponte__link">
+      <span class="ponte__link-icon">02</span>
+      <span class="ponte__link-label">Rota da Pesca Artesanal</span>
+      <span class="ponte__link-sub">Conheça a pesca que origina o bagre branco</span>
+    </a>
+    <a href="experiencias.html#rota-das-ostras" class="ponte__link">
+      <span class="ponte__link-icon">03</span>
+      <span class="ponte__link-label">Rota das Ostras</span>
+      <span class="ponte__link-sub">Outra forma de viver a produção artesanal do Lagamar</span>
+    </a>
+  </div>
+</section>
+
+
+<!-- CTA FINAL -->
+<section class="nz-section nz-section--light" style="text-align:center">
+  <div class="reveal" style="max-width:560px;margin:0 auto">
+    <span class="t-eyebrow">Próximos passos</span>
+    <h2 class="t-display" style="font-size:clamp(30px,4vw,48px);margin-top:14px">Fale com<br><em>Patrick.</em></h2>
+    <div class="divider" style="margin:24px auto"></div>
+    <p class="t-body">Para fornecimento, parcerias ou qualquer outra questão sobre o Namazuko, entre em contato diretamente.</p>
+    <div class="flex-gap mt-lg" style="justify-content:center">
+      <a href="contato.html#fornecimento" class="btn btn--primary">Solicitar fornecimento</a>
+      <a href="parcerias.html" class="btn btn--ghost-dk">Ver parcerias</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div>
+      <a href="../index.html" class="footer__brand-name">Patrick <span>San</span></a>
+      <p class="footer__brand-desc">Chef, pescador profissional e produtor artesanal. Cananéia e Ilha Comprida, litoral sul de São Paulo.</p>
+    </div>
+    <nav class="footer__col">
+      <span class="footer__col-title">Navegação</span>
+      <a href="territorio.html">Território</a>
+      <a href="patrick-san.html">Patrick San</a>
+      <a href="experiencias.html">Experiências</a>
+      <a href="cursos-mentorias.html">Cursos &amp; Mentorias</a>
+      <a href="namazuko.html">Namazuko</a>
+    </nav>
+    <nav class="footer__col">
+      <span class="footer__col-title">Ecossistema</span>
+      <a href="parcerias.html">Parcerias</a>
+      <a href="diario-do-lagamar.html">Diário do Lagamar</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+  <div class="footer__bottom">
+    <span class="footer__copy">© <span id="footer-year"></span> Patrick San · Cananéia, São Paulo</span>
+    <div class="footer__social">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

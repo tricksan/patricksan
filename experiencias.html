@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Experiências Caiçaras, Experiências Especiais e Vivência Caiçara Completa — a escada de profundidade para viver o território de Cananéia e Ilha Comprida com Patrick San.">
+  <meta property="og:title" content="Experiências — Patrick San">
+  <meta property="og:image" content="../assets/images/experiencias-hero-barco-amanheca.jpg">
+  <title>Experiências — Vivências no Lagamar | Patrick San</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .exp-intro { padding: var(--sp-2xl) var(--pad-x); background: var(--c-off); text-align: center; }
+    .exp-detail { padding: var(--sp-2xl) var(--pad-x); }
+    .exp-detail--light { background: var(--c-off); }
+    .exp-detail--dark { background: var(--c-mangue); }
+    .exp-detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center; max-width: var(--max-w); margin: 0 auto; }
+    .exp-detail-img { width: 100%; aspect-ratio: 4/5; object-fit: cover; display: block; }
+    .exp-meta-list { display: flex; gap: 28px; flex-wrap: wrap; margin: 28px 0; }
+    .exp-meta-item__value { font-family: var(--f-display); font-size: 22px; font-weight: 300; display: block; }
+    .exp-meta-item__label { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; margin-top: 4px; display: block; }
+    .info-section { padding: var(--sp-2xl) var(--pad-x); position: relative; overflow: hidden; }
+    .info-bg { position: absolute; inset: 0; z-index: 0; }
+    .info-bg img { width: 100%; height: 100%; object-fit: cover; }
+    .info-overlay { position: absolute; inset: 0; z-index: 1; background: linear-gradient(160deg, rgba(8,14,10,.9), rgba(10,20,16,.78)); }
+    .info-content { position: relative; z-index: 2; max-width: var(--max-w); margin: 0 auto; }
+    .info-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin-top: 48px; }
+    .info-card { background: rgba(245,240,230,.05); border: 1px solid rgba(245,240,230,.08); padding: 32px; }
+    .info-card__title { font-family: var(--f-display); font-size: 20px; color: var(--c-creme); margin-bottom: 10px; }
+    .info-card__body { font-size: var(--t-13); font-weight: 300; line-height: 1.75; color: rgba(245,240,230,.55); }
+    .toc-nav { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-top: 32px; }
+    .toc-nav a {
+      font-size: 11px; letter-spacing: .08em; text-transform: uppercase;
+      color: var(--c-txt-s); border: 1px solid var(--c-border);
+      padding: 8px 16px; transition: all var(--t-fast);
+    }
+    .toc-nav a:hover { color: var(--c-txt); border-color: rgba(26,26,24,.3); }
+    @media(max-width:768px){
+      .exp-detail-grid { grid-template-columns: 1fr; gap: 32px; }
+      .info-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<a href="https://wa.me/55XXXXXXXXXXX" class="wa-float" title="Falar com Patrick San" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<nav class="nav" id="main-nav">
+  <a href="../index.html" class="nav__logo">Patrick <span>San</span></a>
+  <div class="nav__links">
+    <a href="territorio.html" class="nav__link">Território</a>
+    <a href="patrick-san.html" class="nav__link">Patrick San</a>
+    <a href="experiencias.html" class="nav__link active">Experiências</a>
+    <a href="cursos-mentorias.html" class="nav__link">Cursos &amp; Mentorias</a>
+    <a href="namazuko.html" class="nav__link">Namazuko</a>
+    <a href="parcerias.html" class="nav__link">Parcerias</a>
+    <a href="diario-do-lagamar.html" class="nav__link">Diário do Lagamar</a>
+    <a href="contato.html" class="nav__cta">Contato</a>
+  </div>
+  <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<nav class="nav__mobile" id="nav-mobile">
+  <a href="territorio.html" class="nav__link">Território</a>
+  <a href="patrick-san.html" class="nav__link">Patrick San</a>
+  <a href="experiencias.html" class="nav__link">Experiências</a>
+  <a href="cursos-mentorias.html" class="nav__link">Cursos &amp; Mentorias</a>
+  <a href="namazuko.html" class="nav__link">Namazuko</a>
+  <a href="parcerias.html" class="nav__link">Parcerias</a>
+  <a href="diario-do-lagamar.html" class="nav__link">Diário do Lagamar</a>
+  <a href="contato.html" class="nav__cta">Contato</a>
+</nav>
+
+<!-- HERO VIDEO
+     [VÍDEO] experiencias-video-hero-barco.mp4
+     Fallback: experiencias-hero-barco-amanheca.jpg -->
+<div class="hero" style="min-height:600px">
+  <div class="hero__media">
+    <video src="../assets/videos/experiencias-video-hero-barco.mp4"
+      poster="../assets/images/experiencias-hero-barco-amanheca.jpg"
+      autoplay muted loop playsinline preload="none" aria-hidden="true"
+      style="width:100%;height:100%;object-fit:cover"></video>
+    <div class="hero__media--fallback" aria-hidden="true"></div>
+  </div>
+  <div class="hero__overlay"></div>
+  <div class="hero__content">
+    <span class="hero__eyebrow reveal">A frente principal</span>
+    <h1 class="hero__title reveal reveal-delay-1">Experiências<br>no <em>Lagamar.</em></h1>
+    <p class="hero__sub reveal reveal-delay-2">Uma escada de profundidade — do primeiro contato com o território até a imersão completa no cotidiano de Patrick San.</p>
+  </div>
+</div>
+
+<!-- INTRO — Lógica da escada -->
+<section class="exp-intro">
+  <div class="max-w-prose reveal" style="margin:0 auto">
+    <span class="t-eyebrow">Três níveis de profundidade</span>
+    <h2 class="t-display" style="font-size:clamp(28px,3.5vw,44px);margin-top:14px">Escolha o quanto<br>quer se aproximar.</h2>
+    <p class="t-body mt-md">As <strong style="font-weight:500">Experiências Caiçaras</strong> são a porta de entrada — cada uma com seu próprio recorte do território. As <strong style="font-weight:500">Experiências Especiais</strong> aprofundam a relação com a gastronomia local. E a <strong style="font-weight:500">Vivência Caiçara Completa</strong> é a forma mais completa de viver o cotidiano de Patrick — dias inteiros dentro do território.</p>
+    <p class="t-body mt-md">Todas as experiências são conduzidas pessoalmente por Patrick San e dependem da disponibilidade do território — clima, marés e temporada. Reservas devem ser feitas com antecedência através do formulário de contato.</p>
+  </div>
+  <nav class="toc-nav reveal" aria-label="Navegação rápida por experiência">
+    <a href="#caicaras">Experiências Caiçaras</a>
+    <a href="#especiais">Experiências Especiais</a>
+    <a href="#vivencia-completa">Vivência Caiçara Completa</a>
+  </nav>
+</section>
+
+
+<!-- ════════════════════════════════════
+     EXPERIÊNCIAS CAIÇARAS — bloco de categoria
+     [FOTO] experiencias-caicaras-categoria-hero.jpg
+     ════════════════════════════════════ -->
+<div class="categoria-block" id="caicaras">
+  <div class="categoria-block__bg" aria-hidden="true">
+    <img src="../assets/images/experiencias-caicaras-categoria-hero.jpg" alt="" loading="lazy">
+  </div>
+  <div class="categoria-block__content">
+    <span class="categoria-block__tier reveal">Nível de entrada</span>
+    <h2 class="categoria-block__title reveal reveal-delay-1">Experiências Caiçaras</h2>
+    <p class="categoria-block__desc reveal reveal-delay-2">O primeiro contato com o território — pesca, mergulho, gastronomia e cultura local, cada uma com seu próprio recorte do Lagamar.</p>
+    <div class="categoria-block__items reveal reveal-delay-3">
+      <span>Rota da Pesca Artesanal</span>
+      <span>Pesca Submarina em Apneia</span>
+      <span>Rota das Ostras</span>
+      <span>Comunidades Tradicionais</span>
+      <span>Enseada da Baleia</span>
+    </div>
+  </div>
+</div>
+
+<!-- ─── Rota da Pesca Artesanal ─── -->
+<section class="exp-detail exp-detail--light" id="rota-pesca-artesanal">
+  <div class="exp-detail-grid">
+    <!-- [FOTO] pesca-tarrafa-lancamento.jpg -->
+    <div class="reveal">
+      <img class="exp-detail-img" src="../assets/images/pesca-tarrafa-lancamento.jpg" alt="Lançamento de tarrafa — Rota da Pesca Artesanal">
+    </div>
+    <div class="reveal reveal-delay-1">
+      <span class="t-eyebrow">Experiências Caiçaras · Cananéia</span>
+      <h2 class="t-display" style="font-size:clamp(32px,4.5vw,52px);margin-top:14px">Rota da<br>Pesca <em>Artesanal.</em></h2>
+      <div class="divider"></div>
+      <p class="t-body" style="max-width:440px">Saída antes do amanhecer com Patrick em seu barco. Você aprende e participa das técnicas caiçaras de pesca — tarrafa, espinhel, currico — em pleno Lagamar. A experiência termina com uma refeição preparada com o pescado do dia.</p>
+      <div class="exp-meta-list">
+        <div><span class="exp-meta-item__value">8h</span><span class="exp-meta-item__label" style="color:var(--c-txt-t)">Duração</span></div>
+        <div><span class="exp-meta-item__value">2–4</span><span class="exp-meta-item__label" style="color:var(--c-txt-t)">Pessoas</span></div>
+      </div>
+      <a href="contato.html#experiencias" class="btn btn--primary">Entrar em contato</a>
+    </div>
+  </div>
+</section>
+
+<section class="exp-detail exp-detail--dark">
+  <div style="max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:16px">
+    <div class="reveal">
+      <img src="../assets/images/pesca-barco-nevoa-lagamar.jpg" alt="Barco na névoa do Lagamar ao amanhecer" style="width:100%;aspect-ratio:1/1;object-fit:cover">
+    </div>
+    <div class="reveal reveal-delay-1">
+      <img src="../assets/images/pesca-pescado-dia-barco.jpg" alt="Pescado do dia no barco" style="width:100%;aspect-ratio:1/1;object-fit:cover">
+    </div>
+  </div>
+</section>
+
+<section class="exp-detail exp-detail--light">
+  <div class="exp-detail-grid">
+    <div class="reveal">
+      <img class="exp-detail-img" src="../assets/images/pesca-refeicao-pescado-dia.jpg" alt="Refeição com o pescado do dia">
+    </div>
+    <div class="reveal reveal-delay-1">
+      <img class="exp-detail-img" src="../assets/images/pesca-retorno-por-do-sol.jpg" alt="Retorno ao pôr do sol no Lagamar">
+    </div>
+  </div>
+</section>
+
+<section class="exp-detail exp-detail--dark">
+  <div style="max-width:var(--max-w);margin:0 auto">
+    <span class="t-eyebrow reveal">A sequência do dia</span>
+    <h3 class="t-display reveal reveal-delay-1" style="font-size:28px;color:var(--c-creme);margin-top:10px">Do amanhecer ao retorno.</h3>
+  </div>
+  <div class="galeria mt-lg reveal">
+    <div class="galeria__item"><img src="../assets/images/pesca-sequencia-01.jpg" alt="Sequência 01 — Rota da Pesca Artesanal" loading="lazy"><div class="galeria__item__caption">Acordar</div></div>
+    <div class="galeria__item"><img src="../assets/images/pesca-sequencia-02.jpg" alt="Sequência 02 — Rota da Pesca Artesanal" loading="lazy"><div class="galeria__item__caption">Embarque</div></div>
+    <div class="galeria__item"><img src="../assets/images/pesca-sequencia-03.jpg" alt="Sequência 03 — Rota da Pesca Artesanal" loading="lazy"><div class="galeria__item__caption">Pesca</div></div>
+    <div class="galeria__item"><img src="../assets/images/pesca-sequencia-04.jpg" alt="Sequência 04 — Rota da Pesca Artesanal" loading="lazy"><div class="galeria__item__caption">Pescado</div></div>
+    <div class="galeria__item"><img src="../assets/images/pesca-sequencia-05.jpg" alt="Sequência 05 — Rota da Pesca Artesanal" loading="lazy"><div class="galeria__item__caption">Refeição</div></div>
+    <div class="galeria__item"><img src="../assets/images/pesca-sequencia-06.jpg" alt="Sequência 06 — Rota da Pesca Artesanal" loading="lazy"><div class="galeria__item__caption">Retorno</div></div>
+  </div>
+  <span class="galeria-label reveal" style="text-align:center;display:block;margin-top:16px">← Arraste para explorar</span>
+</section>
+
+
+<!-- ─── Pesca Submarina em Apneia — NOVA, conteúdo a definir ─── -->
+<section class="exp-detail exp-detail--light" id="pesca-submarina-apneia">
+  <div class="exp-detail-grid">
+    <!-- [FOTO] apneia-hero.jpg (novo) -->
+    <div class="reveal">
+      <img class="exp-detail-img" src="../assets/images/apneia-hero.jpg" alt="Pesca Submarina em Apneia no Lagamar">
+    </div>
+    <div class="reveal reveal-delay-1">
+      <span class="t-eyebrow">Experiências Caiçaras</span>
+      <h2 class="t-display" style="font-size:clamp(32px,4.5vw,52px);margin-top:14px">Pesca Submarina<br>em <em>Apneia.</em></h2>
+      <div class="divider"></div>
+      <p class="t-body" style="max-width:440px;font-style:italic;color:var(--c-txt-t)">[CONTEÚDO A DEFINIR — descrição completa da experiência: o que é, como funciona, duração, número de pessoas, o que está incluído, requisitos prévios.]</p>
+      <span class="content-pending">Pendente — ver MEDIA_MAP e blueprint, seção 5.2</span>
+      <div class="mt-lg">
+        <a href="contato.html#experiencias" class="btn btn--primary">Entrar em contato</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="exp-detail exp-detail--dark">
+  <div style="max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:16px">
+    <!-- [FOTO] apneia-mergulho-01.jpg (novo) -->
+    <div class="reveal">
+      <img src="../assets/images/apneia-mergulho-01.jpg" alt="Mergulho em apneia — Lagamar" style="width:100%;aspect-ratio:1/1;object-fit:cover">
+    </div>
+    <!-- [FOTO] apneia-mergulho-02.jpg (novo) -->
+    <div class="reveal reveal-delay-1">
+      <img src="../assets/images/apneia-mergulho-02.jpg" alt="Mergulho em apneia — território" style="width:100%;aspect-ratio:1/1;object-fit:cover">
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── Rota das Ostras — NOVA, conteúdo a definir ─── -->
+<section class="exp-detail exp-detail--light" id="rota-das-ostras">
+  <div class="exp-detail-grid">
+    <div class="reveal" style="order:2">
+      <span class="t-eyebrow">Experiências Caiçaras</span>
+      <h2 class="t-display" style="font-size:clamp(32px,4.5vw,52px);margin-top:14px">Rota das<br><em>Ostras.</em></h2>
+      <div class="divider"></div>
+      <p class="t-body" style="max-width:440px;font-style:italic;color:var(--c-txt-t)">[CONTEÚDO A DEFINIR — descrição completa: cultivo de ostras no Lagamar, degustação, contexto territorial, duração, número de pessoas, o que está incluído.]</p>
+      <span class="content-pending">Pendente — ver MEDIA_MAP e blueprint, seção 5.2</span>
+      <div class="mt-lg">
+        <a href="contato.html#experiencias" class="btn btn--primary">Entrar em contato</a>
+      </div>
+    </div>
+    <!-- [FOTO] ostras-hero.jpg (novo) -->
+    <div class="reveal reveal-delay-1" style="order:1">
+      <img class="exp-detail-img" src="../assets/images/ostras-hero.jpg" alt="Rota das Ostras — cultivo no Lagamar">
+    </div>
+  </div>
+</section>
+
+<section class="exp-detail exp-detail--dark">
+  <div style="max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:16px">
+    <!-- [FOTO] ostras-cultivo-01.jpg (novo) -->
+    <div class="reveal">
+      <img src="../assets/images/ostras-cultivo-01.jpg" alt="Cultivo de ostras no Lagamar" style="width:100%;aspect-ratio:1/1;object-fit:cover">
+    </div>
+    <!-- [FOTO] ostras-degustacao.jpg (novo) -->
+    <div class="reveal reveal-delay-1">
+      <img src="../assets/images/ostras-degustacao.jpg" alt="Degustação de ostras — Rota das Ostras" style="width:100%;aspect-ratio:1/1;object-fit:cover">
+    </div>
+  </div>
+</section>
+
+
+<!-- ─── Comunidades Tradicionais — NOVA, conteúdo a definir ─── -->
+<section class="exp-detail exp-detail--light" id="comunidades-tradicionais">
+  <div class="exp-detail-grid">
+    <!-- [FOTO] comunidades-hero.jpg (novo) -->
+    <div class="reveal">
+      <img class="exp-detail-img" src="../assets/images/comunidades-hero.jpg" alt="Comunidades Tradicionais do Lagamar">
+    </div>
+    <div class="reveal reveal-delay-1">
+      <span class="t-eyebrow">Experiências Caiçaras</span>
+      <h2 class="t-display" style="font-size:clamp(32px,4.5vw,52px);margin-top:14px">Comunidades<br><em>Tradicionais.</em></h2>
+      <div class="divider"></div>
+      <p class="t-body" style="max-width:440px;font-style:italic;color:var(--c-txt-t)">[CONTEÚDO A DEFINIR — descrição completa: quais comunidades, como a visita é conduzida, aspectos culturais abordados, duração, número de pessoas.]</p>
+      <span class="content-pending">Pendente — ver MEDIA_MAP e blueprint, seção 5.2</span>
+      <div class="mt-lg">
+        <a href="contato.html#experiencias" class="btn btn--primary">Entrar em contato</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="exp-detail exp-detail--dark">
+  <div style="max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:16px">
+    <!-- [FOTO] comunidades-encontro-01.jpg (novo) -->
+    <div class="reveal">
+      <img src="../assets/images/comunidades-encontro-01.jpg" alt="Encontro com comunidade tradicional caiçara" style="width:100%;aspect-ratio:1/1;object-fit:cover">
+    </div>
+    <!-- [FOTO] comunidades-saberes.jpg (novo) -->
+    <div class="reveal reveal-delay-1">
+      <img src="../assets/images/comunidades-saberes.jpg" alt="Saberes tradicionais — Comunidades Tradicionais" style="width:100%;aspect-ratio:1/1;object-fit:cover">
+    </div>
+  </div>
+</section>
+
+<!-- ─── Enseada da Baleia — NOVA, conteúdo a definir ─── -->
+<section class="exp-detail exp-detail--light" id="enseada-da-baleia">
+  <div class="exp-detail-grid">
+    <div class="reveal" style="order:2">
+      <span class="t-eyebrow">Experiências Caiçaras · Sazonal</span>
+      <h2 class="t-display" style="font-size:clamp(32px,4.5vw,52px);margin-top:14px">Enseada<br>da <em>Baleia.</em></h2>
+      <div class="divider"></div>
+      <p class="t-body" style="max-width:440px;font-style:italic;color:var(--c-txt-t)">[CONTEÚDO A DEFINIR — descrição completa: local, sazonalidade (avistamento de baleias é sazonal — isso precisa estar claro no texto final), duração, número de pessoas, o que está incluído.]</p>
+      <span class="content-pending">Pendente — ver MEDIA_MAP e blueprint, seção 5.2</span>
+      <div class="mt-lg">
+        <a href="contato.html#experiencias" class="btn btn--primary">Entrar em contato</a>
+      </div>
+    </div>
+    <!-- [FOTO] enseada-baleia-hero.jpg (novo) -->
+    <div class="reveal reveal-delay-1" style="order:1">
+      <img class="exp-detail-img" src="../assets/images/enseada-baleia-hero.jpg" alt="Enseada da Baleia — Lagamar">
+    </div>
+  </div>
+</section>
+
+<section class="exp-detail exp-detail--dark">
+  <div style="max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:16px">
+    <!-- [FOTO] enseada-baleia-vista-01.jpg (novo) -->
+    <div class="reveal">
+      <img src="../assets/images/enseada-baleia-vista-01.jpg" alt="Vista da Enseada da Baleia" style="width:100%;aspect-ratio:1/1;object-fit:cover">
+    </div>
+    <!-- [FOTO] enseada-baleia-vista-02.jpg (novo) -->
+    <div class="reveal reveal-delay-1">
+      <img src="../assets/images/enseada-baleia-vista-02.jpg" alt="Enseada da Baleia — território" style="width:100%;aspect-ratio:1/1;object-fit:cover">
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     EXPERIÊNCIAS ESPECIAIS — bloco de categoria
+     [FOTO] experiencias-especiais-categoria-hero.jpg
+     ════════════════════════════════════ -->
+<div class="categoria-block" id="especiais">
+  <div class="categoria-block__bg" aria-hidden="true">
+    <img src="../assets/images/experiencias-especiais-categoria-hero.jpg" alt="" loading="lazy">
+  </div>
+  <div class="categoria-block__content">
+    <span class="categoria-block__tier reveal">Nível intermediário</span>
+    <h2 class="categoria-block__title reveal reveal-delay-1">Experiências Especiais</h2>
+    <p class="categoria-block__desc reveal reveal-delay-2">Um aprofundamento gastronômico guiado por Patrick, com narrativa prato a prato sobre o território.</p>
+    <div class="categoria-block__items reveal reveal-delay-3">
+      <span>Rota Gastronômica do Lagamar</span>
+    </div>
+  </div>
+</div>
+
+<!-- ─── Rota Gastronômica do Lagamar (herda da antiga "Omakase Caiçara") ─── -->
+<section class="exp-detail exp-detail--light" id="rota-gastronomica-lagamar">
+  <div class="exp-detail-grid">
+    <div class="reveal" style="order:2">
+      <span class="t-eyebrow">Experiências Especiais · Ilha Comprida</span>
+      <h2 class="t-display" style="font-size:clamp(32px,4.5vw,52px);margin-top:14px">Rota<br>Gastronômica<br>do <em>Lagamar.</em></h2>
+      <div class="divider"></div>
+      <p class="t-body" style="max-width:440px">Um menu degustação inteiramente baseado em pescados e ingredientes do Lagamar, narrado por Patrick prato a prato. Cada tempo conta a história de um ingrediente, uma técnica ou uma memória do território.</p>
+      <div class="exp-meta-list">
+        <div><span class="exp-meta-item__value">4h</span><span class="exp-meta-item__label" style="color:var(--c-txt-t)">Duração</span></div>
+        <div><span class="exp-meta-item__value">Até 8</span><span class="exp-meta-item__label" style="color:var(--c-txt-t)">Pessoas</span></div>
+      </div>
+      <a href="contato.html#experiencias" class="btn btn--primary">Entrar em contato</a>
+    </div>
+    <!-- [FOTO] omakase-mesa-posta-ambiente.jpg (manter nome — ver MEDIA_MAP) -->
+    <div class="reveal reveal-delay-1" style="order:1">
+      <img class="exp-detail-img" src="../assets/images/omakase-mesa-posta-ambiente.jpg" alt="Mesa posta para a Rota Gastronômica do Lagamar">
+    </div>
+  </div>
+</section>
+
+<section class="exp-detail exp-detail--dark">
+  <div style="max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:16px">
+    <div class="reveal">
+      <img src="../assets/images/omakase-primeiro-prato-servindo.jpg" alt="Primeiro prato sendo servido — Rota Gastronômica do Lagamar" style="width:100%;aspect-ratio:1/1;object-fit:cover">
+    </div>
+    <div class="reveal reveal-delay-1">
+      <img src="../assets/images/omakase-ingrediente-territorio.jpg" alt="Ingrediente do território — Rota Gastronômica do Lagamar" style="width:100%;aspect-ratio:1/1;object-fit:cover">
+    </div>
+  </div>
+</section>
+
+<section class="exp-detail exp-detail--light">
+  <div class="exp-detail-grid" style="margin-bottom:56px">
+    <div class="reveal">
+      <img class="exp-detail-img" src="../assets/images/omakase-patrick-narrando-mesa.jpg" alt="Patrick narrando o menu à mesa">
+    </div>
+    <div class="reveal reveal-delay-1">
+      <span class="t-eyebrow">A experiência</span>
+      <h3 class="t-display" style="font-size:clamp(26px,3vw,40px);margin-top:14px">Cada prato<br>tem uma história.</h3>
+      <div class="divider"></div>
+      <p class="t-body" style="max-width:400px">Patrick apresenta cada tempo do menu pessoalmente — de onde vem o ingrediente, como foi pescado ou produzido, e por que está naquele prato. Gastronomia como encontro, não apenas serviço.</p>
+    </div>
+  </div>
+
+  <span class="t-eyebrow reveal">O menu</span>
+  <h3 class="t-display reveal reveal-delay-1" style="font-size:28px;margin-top:10px">Sequência de pratos.</h3>
+  <div class="galeria mt-lg reveal">
+    <div class="galeria__item"><img src="../assets/images/omakase-prato-01.jpg" alt="Prato 01 — Rota Gastronômica do Lagamar" loading="lazy"><div class="galeria__item__caption">Tempo 01</div></div>
+    <div class="galeria__item"><img src="../assets/images/omakase-prato-02.jpg" alt="Prato 02 — Rota Gastronômica do Lagamar" loading="lazy"><div class="galeria__item__caption">Tempo 02</div></div>
+    <div class="galeria__item"><img src="../assets/images/omakase-prato-03.jpg" alt="Prato 03 — Rota Gastronômica do Lagamar" loading="lazy"><div class="galeria__item__caption">Tempo 03</div></div>
+    <div class="galeria__item"><img src="../assets/images/omakase-prato-04.jpg" alt="Prato 04 — Rota Gastronômica do Lagamar" loading="lazy"><div class="galeria__item__caption">Tempo 04</div></div>
+    <div class="galeria__item"><img src="../assets/images/omakase-prato-05.jpg" alt="Prato 05 — Rota Gastronômica do Lagamar" loading="lazy"><div class="galeria__item__caption">Tempo 05</div></div>
+    <div class="galeria__item"><img src="../assets/images/omakase-prato-06.jpg" alt="Prato 06 — Rota Gastronômica do Lagamar" loading="lazy"><div class="galeria__item__caption">Tempo 06</div></div>
+    <div class="galeria__item"><img src="../assets/images/omakase-prato-07.jpg" alt="Prato 07 — Rota Gastronômica do Lagamar" loading="lazy"><div class="galeria__item__caption">Tempo 07</div></div>
+    <div class="galeria__item"><img src="../assets/images/omakase-prato-08.jpg" alt="Prato 08 — Rota Gastronômica do Lagamar" loading="lazy"><div class="galeria__item__caption">Tempo 08</div></div>
+  </div>
+  <span class="galeria-label reveal" style="margin-top:16px;display:block">← Arraste para explorar · [VALIDAR COM PATRICK: pratos do menu atual]</span>
+</section>
+
+
+<!-- PONTE — Especiais → Cursos -->
+<section class="ponte">
+  <span class="ponte__eyebrow reveal">Quer ir mais a fundo?</span>
+  <h2 class="ponte__title reveal reveal-delay-1">Aprofunde com um <em>curso.</em></h2>
+  <p class="t-body reveal reveal-delay-2" style="max-width:480px;margin:0 auto">A técnica por trás da Rota Gastronômica do Lagamar pode ser aprendida — em Cursos Online, Presenciais ou Mentorias.</p>
+  <div class="mt-lg reveal reveal-delay-3">
+    <a href="cursos-mentorias.html" class="btn btn--primary">Conhecer cursos e mentorias</a>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     VIVÊNCIA CAIÇARA COMPLETA — topo da escada, destaque máximo
+     (herda da antiga "Imersão no Território")
+     ════════════════════════════════════ -->
+<div id="vivencia-completa">
+  <!-- [VÍDEO] imersao-video-tres-dias.mp4 (manter nome — ver MEDIA_MAP)
+       Fallback: imersao-hero-lagamar-amanhecer.jpg -->
+  <div class="hero" style="min-height:620px">
+    <div class="hero__media">
+      <video src="../assets/videos/imersao-video-tres-dias.mp4"
+        poster="../assets/images/imersao-hero-lagamar-amanhecer.jpg"
+        autoplay muted loop playsinline preload="none" aria-hidden="true"
+        style="width:100%;height:100%;object-fit:cover"></video>
+      <div class="hero__media--fallback" aria-hidden="true"></div>
+    </div>
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <span class="hero__eyebrow reveal">Experiência premium · Topo da jornada</span>
+      <h2 class="hero__title reveal reveal-delay-1" style="font-size:clamp(40px,7vw,80px)">Vivência Caiçara<br><em>Completa.</em></h2>
+      <p class="hero__sub reveal reveal-delay-2">A forma mais profunda de viver o território — dias inteiros dentro do cotidiano de Patrick San.</p>
+    </div>
+  </div>
+</div>
+
+<section class="exp-detail exp-detail--light">
+  <div class="exp-detail-grid">
+    <div class="reveal">
+      <span class="t-eyebrow">3 dias · 2 noites</span>
+      <h2 class="t-display" style="font-size:clamp(30px,4vw,48px);margin-top:14px">Viva o<br><em>cotidiano</em><br>de Patrick.</h2>
+      <div class="divider"></div>
+      <p class="t-body" style="max-width:440px">Três dias completos vivendo o território — pesca, produção artesanal, visita a produtores locais e refeições comunitárias. A experiência mais completa para quem quer entender de verdade a relação entre Patrick, Cananéia e Ilha Comprida.</p>
+      <div class="exp-meta-list">
+        <div><span class="exp-meta-item__value">3 dias</span><span class="exp-meta-item__label" style="color:var(--c-txt-t)">2 noites</span></div>
+        <div><span class="exp-meta-item__value">Até 6</span><span class="exp-meta-item__label" style="color:var(--c-txt-t)">Pessoas</span></div>
+      </div>
+      <a href="contato.html#experiencias" class="btn btn--primary">Entrar em contato</a>
+    </div>
+    <!-- [FOTO] imersao-vista-amanhecer-hospedagem.jpg -->
+    <div class="reveal reveal-delay-1">
+      <img class="exp-detail-img" src="../assets/images/imersao-vista-amanhecer-hospedagem.jpg" alt="Vista do amanhecer da hospedagem — Vivência Caiçara Completa">
+    </div>
+  </div>
+</section>
+
+<section class="exp-detail exp-detail--dark">
+  <div style="max-width:var(--max-w);margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:16px">
+    <div class="reveal">
+      <img src="../assets/images/imersao-visita-produtor-local.jpg" alt="Visita a produtor local — Vivência Caiçara Completa" style="width:100%;aspect-ratio:4/5;object-fit:cover">
+    </div>
+    <div class="reveal reveal-delay-1">
+      <img src="../assets/images/imersao-refeicao-comunitaria-mesa.jpg" alt="Refeição comunitária — Vivência Caiçara Completa" style="width:100%;aspect-ratio:4/5;object-fit:cover">
+    </div>
+  </div>
+</section>
+
+<section class="exp-detail exp-detail--light">
+  <div style="max-width:var(--max-w);margin:0 auto" class="reveal">
+    <img src="../assets/images/imersao-fogueira-beira-lagamar.jpg" alt="Fogueira na beira do Lagamar — noite na Vivência Caiçara Completa"
+      style="width:100%;aspect-ratio:21/9;object-fit:cover">
+    <p style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--c-txt-t);margin-top:12px;text-align:center">O último momento de um dia inesquecível</p>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════
+     INFORMAÇÕES PRÁTICAS
+     [FOTO] experiencias-fundo-lagamar-informacoes.jpg
+     ════════════════════════════════════ -->
+<section class="info-section">
+  <div class="info-bg" aria-hidden="true">
+    <img src="../assets/images/experiencias-fundo-lagamar-informacoes.jpg" alt="">
+  </div>
+  <div class="info-overlay" aria-hidden="true"></div>
+  <div class="info-content">
+    <div class="reveal" style="max-width:560px">
+      <span class="t-eyebrow">Informações práticas</span>
+      <h2 class="t-display" style="font-size:clamp(30px,4vw,48px);color:var(--c-creme);margin-top:14px">Antes de<br><em>entrar em contato.</em></h2>
+    </div>
+    <div class="info-grid">
+      <div class="info-card reveal">
+        <h3 class="info-card__title">Disponibilidade</h3>
+        <p class="info-card__body">As experiências dependem de clima, marés e temporada de pesca. Datas são confirmadas após contato direto com Patrick.</p>
+      </div>
+      <div class="info-card reveal reveal-delay-1">
+        <h3 class="info-card__title">Como chegar</h3>
+        <p class="info-card__body">Cananéia e Ilha Comprida ficam a aproximadamente 3h de São Paulo pela Rodovia Régis Bittencourt. Orientações detalhadas são enviadas após o contato.</p>
+      </div>
+      <div class="info-card reveal reveal-delay-2">
+        <h3 class="info-card__title">O que levar</h3>
+        <p class="info-card__body">Roupas confortáveis, protetor solar e disposição para experiências ao ar livre. Recomendações específicas são enviadas por experiência.</p>
+      </div>
+    </div>
+    <div class="mt-xl reveal reveal-delay-3">
+      <a href="contato.html#experiencias" class="btn btn--primary">Entrar em contato</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div>
+      <a href="../index.html" class="footer__brand-name">Patrick <span>San</span></a>
+      <p class="footer__brand-desc">Chef, pescador profissional e produtor artesanal. Cananéia e Ilha Comprida, litoral sul de São Paulo.</p>
+    </div>
+    <nav class="footer__col">
+      <span class="footer__col-title">Navegação</span>
+      <a href="territorio.html">Território</a>
+      <a href="patrick-san.html">Patrick San</a>
+      <a href="experiencias.html">Experiências</a>
+      <a href="cursos-mentorias.html">Cursos &amp; Mentorias</a>
+      <a href="namazuko.html">Namazuko</a>
+    </nav>
+    <nav class="footer__col">
+      <span class="footer__col-title">Ecossistema</span>
+      <a href="parcerias.html">Parcerias</a>
+      <a href="diario-do-lagamar.html">Diário do Lagamar</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+  <div class="footer__bottom">
+    <span class="footer__copy">© <span id="footer-year"></span> Patrick San · Cananéia, São Paulo</span>
+    <div class="footer__social">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

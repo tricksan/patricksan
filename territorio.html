@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cananéia e Ilha Comprida — Patrimônio da Humanidade pela UNESCO. O Lagamar, a cultura caiçara e a biodiversidade que sustentam experiências, cursos, mentorias e o Namazuko de Patrick San.">
+  <meta property="og:title" content="Território — Patrick San">
+  <meta property="og:image" content="../assets/images/territorio-aerea-canania-ilha-comprida.jpg">
+  <title>Território — Cananéia &amp; Ilha Comprida | Patrick San</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .territorio-intro { padding: var(--sp-2xl) var(--pad-x); background: var(--c-creme); }
+    .territorio-intro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; max-width: var(--max-w); margin: 0 auto; }
+    .territorio-facts-dark { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; }
+    .fact-block { background: var(--c-mangue); padding: 40px 32px; border: 1px solid rgba(245,240,230,.06); }
+    .fact-block .fact__value { color: var(--c-creme); font-size: 28px; }
+    .fact-block .fact__label { color: rgba(245,240,230,.38); }
+    .especies-section { padding: var(--sp-2xl) var(--pad-x); background: var(--c-off); }
+    .especies-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin-top: 52px; }
+    .especie-card { position: relative; aspect-ratio: 4/3; overflow: hidden; }
+    .especie-card__bg { position: absolute; inset: 0; transition: transform var(--t-slow) var(--ease); }
+    .especie-card__bg img { width: 100%; height: 100%; object-fit: cover; }
+    .especie-card:hover .especie-card__bg { transform: scale(1.04); }
+    .especie-card::before { content: ''; position: absolute; inset: 0; z-index: 1; background: linear-gradient(to top, rgba(8,8,6,.85) 0%, transparent 55%); }
+    .especie-card__info { position: absolute; bottom: 0; left: 0; right: 0; z-index: 2; padding: 20px 22px; }
+    .especie-card__name { font-family: var(--f-display); font-size: 22px; font-weight: 400; color: var(--c-creme); display: block; }
+    .especie-card__sub { font-size: 10px; letter-spacing: .12em; text-transform: uppercase; color: var(--c-areia); display: block; margin-top: 4px; }
+    .bg-sp1 { background: linear-gradient(145deg,#0a1c14,#163028,#0c2220); }
+    .bg-sp2 { background: linear-gradient(145deg,#0c1a10,#1a2c1c,#102014); }
+    .bg-sp3 { background: linear-gradient(145deg,#0e1c18,#1c3028,#122420); }
+    .cultura-section { padding: var(--sp-2xl) var(--pad-x); background: var(--c-creme); }
+    .cultura-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 80px; align-items: start; }
+    .cultura-quote { font-family: var(--f-display); font-size: clamp(22px,2.8vw,34px); font-weight: 300; font-style: italic; line-height: 1.5; color: var(--c-txt); border-left: 2px solid var(--c-areia); padding-left: 24px; margin: 24px 0 32px; }
+    @media(max-width:768px){
+      .territorio-intro-grid { grid-template-columns: 1fr; gap: 40px; }
+      .territorio-facts-dark { grid-template-columns: repeat(2,1fr); }
+      .especies-grid { grid-template-columns: 1fr; }
+      .cultura-grid { grid-template-columns: 1fr; gap: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+<a href="https://wa.me/55XXXXXXXXXXX" class="wa-float" title="Falar com Patrick San" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<nav class="nav" id="main-nav">
+  <a href="../index.html" class="nav__logo">Patrick <span>San</span></a>
+  <div class="nav__links">
+    <a href="territorio.html" class="nav__link active">Território</a>
+    <a href="patrick-san.html" class="nav__link">Patrick San</a>
+    <a href="experiencias.html" class="nav__link">Experiências</a>
+    <a href="cursos-mentorias.html" class="nav__link">Cursos &amp; Mentorias</a>
+    <a href="namazuko.html" class="nav__link">Namazuko</a>
+    <a href="parcerias.html" class="nav__link">Parcerias</a>
+    <a href="diario-do-lagamar.html" class="nav__link">Diário do Lagamar</a>
+    <a href="contato.html" class="nav__cta">Contato</a>
+  </div>
+  <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<nav class="nav__mobile" id="nav-mobile">
+  <a href="territorio.html" class="nav__link">Território</a>
+  <a href="patrick-san.html" class="nav__link">Patrick San</a>
+  <a href="experiencias.html" class="nav__link">Experiências</a>
+  <a href="cursos-mentorias.html" class="nav__link">Cursos &amp; Mentorias</a>
+  <a href="namazuko.html" class="nav__link">Namazuko</a>
+  <a href="parcerias.html" class="nav__link">Parcerias</a>
+  <a href="diario-do-lagamar.html" class="nav__link">Diário do Lagamar</a>
+  <a href="contato.html" class="nav__cta">Contato</a>
+</nav>
+
+<!-- HERO VIDEO
+     [VÍDEO] territorio-video-hero.mp4
+     Fallback: territorio-hero-canania-drone.jpg -->
+<div class="page-hero" style="height:75vh;min-height:520px;margin-top:64px">
+  <div class="page-hero__media" style="background:linear-gradient(160deg,#0c1e28,#1a3040,#1c3828)">
+    <video src="../assets/videos/territorio-video-hero.mp4"
+      poster="../assets/images/territorio-hero-canania-drone.jpg"
+      autoplay muted loop playsinline preload="none" aria-hidden="true"
+      style="width:100%;height:100%;object-fit:cover"></video>
+  </div>
+  <div class="page-hero__overlay"></div>
+  <div class="page-hero__content">
+    <span class="page-hero__eyebrow">Patrimônio da Humanidade · UNESCO · 1999</span>
+    <h1 class="page-hero__title">A fundação<br>de <em>tudo.</em></h1>
+  </div>
+</div>
+
+<!-- FACTS STRIP -->
+<div style="background:var(--c-noite)">
+  <div class="territorio-facts-dark">
+    <div class="fact-block reveal">
+      <span class="fact__value">Lagamar</span>
+      <span class="fact__label">Um dos maiores complexos estuarinos do litoral sul-sudeste brasileiro</span>
+    </div>
+    <div class="fact-block reveal reveal-delay-1">
+      <span class="fact__value">1999</span>
+      <span class="fact__label">Patrimônio da Humanidade e Reserva da Biosfera · UNESCO</span>
+    </div>
+    <div class="fact-block reveal reveal-delay-2">
+      <span class="fact__value">3h</span>
+      <span class="fact__label">de São Paulo pela Rodovia Régis Bittencourt</span>
+    </div>
+    <div class="fact-block reveal reveal-delay-3">
+      <span class="fact__value">Caiçara</span>
+      <span class="fact__label">Cultura viva de pesca artesanal e gastronomia de território</span>
+    </div>
+  </div>
+</div>
+
+<!-- INTRODUÇÃO
+     [FOTO] territorio-aerea-canania-ilha-comprida.jpg -->
+<section class="territorio-intro">
+  <div class="territorio-intro-grid">
+    <div class="reveal">
+      <img src="../assets/images/territorio-aerea-canania-ilha-comprida.jpg"
+        alt="Vista aérea de Cananéia e Ilha Comprida — complexo estuarino do Lagamar"
+        style="width:100%;aspect-ratio:3/4;object-fit:cover" loading="lazy">
+    </div>
+    <div>
+      <span class="t-eyebrow reveal">A base de tudo</span>
+      <h2 class="t-display reveal reveal-delay-1" style="font-size:clamp(34px,4.5vw,56px);margin-top:14px">O território<br><em>que origina</em><br>cada frente.</h2>
+      <div class="divider reveal reveal-delay-2"></div>
+      <p class="t-body reveal reveal-delay-2">Cananéia e Ilha Comprida formam parte de um dos maiores e mais preservados complexos estuarinos do litoral brasileiro. O Lagamar — como a região é conhecida — é resultado do encontro entre o mar, os rios e a Mata Atlântica, criando um ecossistema único de biodiversidade excepcional.</p>
+      <p class="t-body reveal reveal-delay-3" style="margin-top:20px">Não é cenário. É o que sustenta as experiências que Patrick San oferece, o conhecimento que ensina em cursos e mentorias, e a origem de criações autorais como o Namazuko.</p>
+      <p class="t-body reveal reveal-delay-3" style="margin-top:20px">Reconhecida pela UNESCO em 1999 como Patrimônio da Humanidade e Reserva da Biosfera da Mata Atlântica, Cananéia é uma das cidades mais antigas do Brasil e carrega uma relação com o mar que se transmite de geração em geração através da cultura caiçara.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CANANÉIA E ILHA COMPRIDA — SPLIT
+     [FOTO] canania-centro-historico.jpg
+     [FOTO] ilha-comprida-praia-entardecer.jpg -->
+<div>
+  <div class="split">
+    <div class="split__image split__image--dark">
+      <img src="../assets/images/canania-centro-historico.jpg" alt="Centro histórico de Cananéia — casario colonial e barcos ancorados" loading="lazy">
+      <span class="split__image__caption">Centro histórico · Cananéia</span>
+    </div>
+    <div class="split__content split__content--light">
+      <span class="t-eyebrow reveal">Cananéia</span>
+      <h2 class="t-display reveal reveal-delay-1" style="font-size:clamp(30px,3.5vw,48px);margin-top:14px">Uma das cidades<br><em>mais antigas do Brasil.</em></h2>
+      <div class="divider reveal reveal-delay-2"></div>
+      <p class="t-body reveal reveal-delay-2" style="max-width:440px">Fundada no século XVI, Cananéia guarda em seu centro histórico tombado os traços de uma cidade que sempre viveu voltada para o mar. O porto, o mercado de peixe, as embarcações de madeira — tudo converge para o Lagamar.</p>
+      <p class="t-body reveal reveal-delay-3" style="max-width:440px;margin-top:20px">É aqui que Patrick San nasceu, pescou, aprendeu e construiu cada uma das frentes de seu trabalho.</p>
+    </div>
+  </div>
+
+  <div class="split split--reverse">
+    <div class="split__content split__content--dark">
+      <span class="t-eyebrow reveal">Ilha Comprida</span>
+      <h2 class="t-display reveal reveal-delay-1" style="font-size:clamp(30px,3.5vw,48px);color:var(--c-creme);margin-top:14px">Onde o oceano<br><em>encontra o estuário.</em></h2>
+      <div class="divider divider--lt reveal reveal-delay-2"></div>
+      <p class="t-body reveal reveal-delay-2" style="max-width:440px;color:rgba(245,240,230,.62)">Ilha Comprida é uma ilha-barreira de 72 quilômetros de extensão separando o Oceano Atlântico do complexo estuarino do Lagamar. De um lado, a praia aberta e selvagem. Do outro, a água calma e produtiva do estuário.</p>
+      <p class="t-body reveal reveal-delay-3" style="max-width:440px;color:rgba(245,240,230,.62);margin-top:20px">É em Ilha Comprida que acontece a Rota Gastronômica do Lagamar — aproveitando a singularidade de um território que reúne dois mundos aquáticos completamente distintos numa mesma ilha.</p>
+    </div>
+    <div class="split__image split__image--lagamar">
+      <img src="../assets/images/ilha-comprida-praia-entardecer.jpg" alt="Praia da Ilha Comprida ao entardecer" loading="lazy">
+      <span class="split__image__caption">Praia · Ilha Comprida</span>
+    </div>
+  </div>
+</div>
+
+<!-- MANGUE
+     [FOTO] lagamar-mangue-raizes.jpg
+     [FOTO] lagamar-barco-canal-drone.jpg -->
+<section style="padding:var(--sp-2xl) var(--pad-x);background:var(--c-off)">
+  <div style="max-width:var(--max-w);margin:0 auto">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:2px">
+      <div class="reveal" style="position:relative;overflow:hidden;min-height:480px;background:linear-gradient(145deg,#081408,#122018,#0a1c10)">
+        <img src="../assets/images/lagamar-mangue-raizes.jpg" alt="Raízes do mangue emergindo da água escura do Lagamar"
+          style="width:100%;height:100%;object-fit:cover;transition:transform var(--t-slow) var(--ease)" loading="lazy">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(4,8,4,.7) 0%,transparent 50%)"></div>
+        <div style="position:absolute;bottom:24px;left:24px;z-index:2">
+          <span style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--c-areia);display:block;margin-bottom:6px">Ecossistema</span>
+          <span style="font-family:var(--f-display);font-size:24px;font-weight:400;color:var(--c-creme)">O mangue.</span>
+        </div>
+      </div>
+      <div class="reveal reveal-delay-1" style="position:relative;overflow:hidden;min-height:480px;background:linear-gradient(145deg,#0c1e28,#1a3040,#0e2030)">
+        <img src="../assets/images/lagamar-barco-canal-drone.jpg" alt="Barco de pesca no canal do Lagamar visto de drone"
+          style="width:100%;height:100%;object-fit:cover;transition:transform var(--t-slow) var(--ease)" loading="lazy">
+        <div style="position:absolute;inset:0;background:linear-gradient(to top,rgba(4,8,12,.7) 0%,transparent 50%)"></div>
+        <div style="position:absolute;bottom:24px;left:24px;z-index:2">
+          <span style="font-size:10px;letter-spacing:.16em;text-transform:uppercase;color:var(--c-areia);display:block;margin-bottom:6px">Pesca artesanal</span>
+          <span style="font-family:var(--f-display);font-size:24px;font-weight:400;color:var(--c-creme)">O canal.</span>
+        </div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:56px;padding:0 8px">
+      <p class="t-body reveal">O mangue é o berço de quase tudo que define o território. É onde as espécies se reproduzem, crescem e retornam — incluindo o bagre branco, origem do Namazuko.</p>
+      <p class="t-body reveal reveal-delay-1">O canal entre Cananéia e Ilha Comprida é o caminho de várias Experiências Caiçaras — da Rota da Pesca Artesanal à Rota das Ostras.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CULTURA CAIÇARA
+     [FOTO] canania-comunidade-caicara.jpg -->
+<section class="cultura-section">
+  <div class="cultura-grid">
+    <div>
+      <span class="t-eyebrow reveal">Cultura caiçara</span>
+      <h2 class="t-display reveal reveal-delay-1" style="font-size:clamp(34px,4.5vw,56px);margin-top:14px">Um patrimônio<br><em>que se vive.</em></h2>
+      <blockquote class="cultura-quote reveal reveal-delay-2">
+        A cultura caiçara não está nos museus. Está no gesto de lançar a tarrafa, no jeito de limpar o peixe, na receita que não foi escrita em nenhum lugar.
+      </blockquote>
+      <p class="t-body reveal reveal-delay-3">A identidade caiçara é resultado de séculos de encontro entre povos indígenas, portugueses e africanos numa faixa de litoral que o isolamento geográfico preservou de forma singular. O resultado é uma cultura com técnicas de pesca, culinária, música e modo de vida que existem em poucos lugares no mundo.</p>
+      <p class="t-body reveal reveal-delay-3" style="margin-top:20px">Esse conhecimento atravessa todo o trabalho de Patrick — está nas Experiências Comunidades Tradicionais, nos Cursos sobre pescados da costa brasileira, e é registrado continuamente no Diário do Lagamar.</p>
+      <div class="mt-lg reveal reveal-delay-4">
+        <a href="diario-do-lagamar.html" class="btn btn--primary">Ler o Diário do Lagamar</a>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-2">
+      <img src="../assets/images/canania-comunidade-caicara.jpg"
+        alt="Comunidade caiçara de Cananéia — pescadores e vida cotidiana"
+        style="width:100%;aspect-ratio:3/4;object-fit:cover" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ESPÉCIES DO ESTUÁRIO -->
+<section class="especies-section">
+  <div style="max-width:var(--max-w);margin:0 auto">
+    <div style="display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:0">
+      <div>
+        <span class="t-eyebrow reveal">Biodiversidade</span>
+        <h2 class="t-display reveal reveal-delay-1" style="font-size:clamp(34px,4.5vw,56px);margin-top:14px">Espécies<br><em>do estuário.</em></h2>
+      </div>
+    </div>
+    <div class="especies-grid">
+      <article class="especie-card reveal">
+        <div class="especie-card__bg bg-sp1">
+          <img src="../assets/images/especie-bagre-branco.jpg" alt="Bagre branco do Lagamar" loading="lazy">
+        </div>
+        <div class="especie-card__info">
+          <span class="especie-card__name">Bagre branco</span>
+          <span class="especie-card__sub">Origem do Namazuko</span>
+        </div>
+      </article>
+      <article class="especie-card reveal reveal-delay-1">
+        <div class="especie-card__bg bg-sp2">
+          <img src="../assets/images/especie-robalo.jpg" alt="Robalo do Lagamar" loading="lazy">
+        </div>
+        <div class="especie-card__info">
+          <span class="especie-card__name">Robalo</span>
+          <span class="especie-card__sub">Estuário · Cananéia</span>
+        </div>
+      </article>
+      <article class="especie-card reveal reveal-delay-2">
+        <div class="especie-card__bg bg-sp3">
+          <img src="../assets/images/especie-tainha.jpg" alt="Tainha do Lagamar" loading="lazy">
+        </div>
+        <div class="especie-card__info">
+          <span class="especie-card__name">Tainha</span>
+          <span class="especie-card__sub">Pesca tradicional caiçara</span>
+        </div>
+      </article>
+    </div>
+    <p style="font-size:11px;font-style:italic;color:var(--c-txt-t);margin-top:16px">[VALIDAR COM PATRICK: espécies e descrições definitivas]</p>
+  </div>
+</section>
+
+<!-- PONTE — Território conecta às demais frentes -->
+<section class="ponte">
+  <span class="ponte__eyebrow reveal">Do território nascem</span>
+  <h2 class="ponte__title reveal reveal-delay-1">Cada frente do trabalho de Patrick <em>começa aqui.</em></h2>
+  <div class="ponte__links reveal reveal-delay-2">
+    <a href="experiencias.html" class="ponte__link">
+      <span class="ponte__link-icon">01</span>
+      <span class="ponte__link-label">Experiências</span>
+      <span class="ponte__link-sub">Viva o Lagamar através da pesca, da gastronomia e da cultura</span>
+    </a>
+    <a href="cursos-mentorias.html" class="ponte__link">
+      <span class="ponte__link-icon">02</span>
+      <span class="ponte__link-label">Cursos &amp; Mentorias</span>
+      <span class="ponte__link-sub">Aprenda o conhecimento construído sobre este território</span>
+    </a>
+    <a href="namazuko.html" class="ponte__link">
+      <span class="ponte__link-icon">03</span>
+      <span class="ponte__link-label">Namazuko</span>
+      <span class="ponte__link-sub">O bagre branco do estuário, transformado em criação autoral</span>
+    </a>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="split">
+  <div class="split__content split__content--dark">
+    <span class="t-eyebrow reveal">Venha ao território</span>
+    <h2 class="t-display reveal reveal-delay-1" style="font-size:clamp(30px,3.5vw,48px);color:var(--c-creme);margin-top:14px">O Lagamar<br><em>espera por você.</em></h2>
+    <div class="divider divider--lt reveal reveal-delay-2"></div>
+    <p class="t-body reveal reveal-delay-2" style="max-width:400px;color:rgba(245,240,230,.62)">As experiências de Patrick San são a forma mais direta de conhecer este território — não como turista, mas como alguém que pertence a ele, ainda que por alguns dias.</p>
+    <div class="flex-gap mt-lg reveal reveal-delay-3">
+      <a href="experiencias.html" class="btn btn--primary">Ver experiências</a>
+      <a href="patrick-san.html" class="btn btn--ghost-lt">Conhecer Patrick San</a>
+    </div>
+  </div>
+  <div class="split__image" style="background:linear-gradient(145deg,#0c1e28,#1a3040,#0e2030)">
+    <img src="../assets/images/territorio-aerea-canania-ilha-comprida.jpg" alt="Vista aérea do Lagamar" loading="lazy">
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div>
+      <a href="../index.html" class="footer__brand-name">Patrick <span>San</span></a>
+      <p class="footer__brand-desc">Chef, pescador profissional e produtor artesanal. Cananéia e Ilha Comprida, litoral sul de São Paulo.</p>
+    </div>
+    <nav class="footer__col">
+      <span class="footer__col-title">Navegação</span>
+      <a href="territorio.html">Território</a>
+      <a href="patrick-san.html">Patrick San</a>
+      <a href="experiencias.html">Experiências</a>
+      <a href="cursos-mentorias.html">Cursos &amp; Mentorias</a>
+      <a href="namazuko.html">Namazuko</a>
+    </nav>
+    <nav class="footer__col">
+      <span class="footer__col-title">Ecossistema</span>
+      <a href="parcerias.html">Parcerias</a>
+      <a href="diario-do-lagamar.html">Diário do Lagamar</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+  <div class="footer__bottom">
+    <span class="footer__copy">© <span id="footer-year"></span> Patrick San · Cananéia, São Paulo</span>
+    <div class="footer__social">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

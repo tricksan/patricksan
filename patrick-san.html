@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Patrick San — Chef, pescador profissional e produtor artesanal. Nascido e criado em Cananéia, litoral sul de São Paulo. Experiências, cursos, mentorias e a criação autoral Namazuko.">
+  <meta property="og:title" content="Patrick San — Chef e pescador profissional">
+  <meta property="og:image" content="../assets/images/patrick-retrato-principal.jpg">
+  <title>Patrick San — Chef, pescador e produtor artesanal</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .bio-section { padding: var(--sp-2xl) var(--pad-x); background: var(--c-off); }
+    .bio-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 80px; align-items: start; max-width: var(--max-w); margin: 0 auto; }
+    .bio-sticky { position: sticky; top: 88px; }
+    .bio-portrait { width: 100%; aspect-ratio: 3/4; object-fit: cover; display: block; }
+    .bio-portrait-wrap { position: relative; }
+    .bio-portrait-caption { font-size: 10px; letter-spacing: .13em; text-transform: uppercase; color: var(--c-txt-t); margin-top: 12px; }
+    .bio-text h2 { font-family: var(--f-display); font-size: clamp(36px,4.5vw,56px); font-weight: 300; line-height: 1.08; margin-bottom: 0; }
+    .bio-text p { font-size: var(--t-15); font-weight: 300; line-height: 1.9; color: var(--c-txt-s); margin-bottom: 24px; }
+    .bio-text p:last-of-type { margin-bottom: 0; }
+    .processo-section { background: var(--c-mangue); padding: var(--sp-2xl) var(--pad-x); }
+    .processo-intro { max-width: 560px; margin-bottom: 56px; }
+    .galeria-label { font-size: 10px; letter-spacing: .16em; text-transform: uppercase; color: rgba(245,240,230,.3); margin-top: 24px; display: block; }
+    .values-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 2px; margin-top: 0; }
+    .value-card { background: rgba(245,240,230,.04); border: 1px solid rgba(245,240,230,.08); padding: 36px 32px; }
+    .value-num { font-family: var(--f-display); font-size: 48px; font-weight: 300; color: var(--c-areia); opacity: .4; display: block; margin-bottom: 16px; line-height: 1; }
+    .value-title { font-family: var(--f-display); font-size: 22px; font-weight: 400; color: var(--c-creme); margin-bottom: 12px; }
+    .value-body { font-size: var(--t-13); font-weight: 300; line-height: 1.75; color: rgba(245,240,230,.55); }
+    .cta-section { background: var(--c-creme); padding: var(--sp-2xl) var(--pad-x); }
+    .cta-inner { max-width: var(--max-w); margin: 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .cta-img { aspect-ratio: 4/3; object-fit: cover; width: 100%; display: block; }
+    @media(max-width:768px){
+      .bio-grid { grid-template-columns: 1fr; gap: 40px; }
+      .bio-sticky { position: static; }
+      .values-grid { grid-template-columns: 1fr; }
+      .cta-inner { grid-template-columns: 1fr; gap: 40px; }
+    }
+  </style>
+</head>
+<body>
+
+<a href="https://wa.me/55XXXXXXXXXXX" class="wa-float" title="Falar com Patrick San" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<nav class="nav" id="main-nav">
+  <a href="../index.html" class="nav__logo">Patrick <span>San</span></a>
+  <div class="nav__links">
+    <a href="territorio.html" class="nav__link">Território</a>
+    <a href="patrick-san.html" class="nav__link active">Patrick San</a>
+    <a href="experiencias.html" class="nav__link">Experiências</a>
+    <a href="cursos-mentorias.html" class="nav__link">Cursos &amp; Mentorias</a>
+    <a href="namazuko.html" class="nav__link">Namazuko</a>
+    <a href="parcerias.html" class="nav__link">Parcerias</a>
+    <a href="diario-do-lagamar.html" class="nav__link">Diário do Lagamar</a>
+    <a href="contato.html" class="nav__cta">Contato</a>
+  </div>
+  <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<nav class="nav__mobile" id="nav-mobile">
+  <a href="territorio.html" class="nav__link">Território</a>
+  <a href="patrick-san.html" class="nav__link">Patrick San</a>
+  <a href="experiencias.html" class="nav__link">Experiências</a>
+  <a href="cursos-mentorias.html" class="nav__link">Cursos &amp; Mentorias</a>
+  <a href="namazuko.html" class="nav__link">Namazuko</a>
+  <a href="parcerias.html" class="nav__link">Parcerias</a>
+  <a href="diario-do-lagamar.html" class="nav__link">Diário do Lagamar</a>
+  <a href="contato.html" class="nav__cta">Contato</a>
+</nav>
+
+<!-- HERO
+     [FOTO] patrick-retrato-principal.jpg -->
+<div class="page-hero" style="margin-top:64px">
+  <div class="page-hero__media" style="background:linear-gradient(145deg,#1a2e1c,#243a26,#1c3040)">
+    <img src="../assets/images/patrick-retrato-principal.jpg" alt="Patrick San — chef e pescador profissional" loading="eager">
+  </div>
+  <div class="page-hero__overlay"></div>
+  <div class="page-hero__content">
+    <span class="page-hero__eyebrow">Chef · Pescador profissional · Educador</span>
+    <h1 class="page-hero__title">Patrick <em>San.</em></h1>
+  </div>
+</div>
+
+<!-- BIO -->
+<section class="bio-section">
+  <div class="bio-grid">
+
+    <div class="bio-sticky">
+      <div class="bio-portrait-wrap reveal">
+        <!-- [FOTO] patrick-pesca-barco.jpg -->
+        <img class="bio-portrait" src="../assets/images/patrick-pesca-barco.jpg" alt="Patrick San pescando no Lagamar">
+        <span class="bio-portrait-caption">Lagamar · Cananéia, São Paulo</span>
+      </div>
+    </div>
+
+    <div class="bio-text">
+      <span class="t-eyebrow reveal">A história</span>
+      <h2 class="reveal reveal-delay-1" style="margin: 14px 0 28px">Pescador<br><em>antes de chef.</em></h2>
+      <div class="divider reveal reveal-delay-1"></div>
+
+      <p class="reveal reveal-delay-2">Patrick San cresceu entre as águas de Cananéia e Ilha Comprida. Antes de qualquer técnica de cozinha, aprendeu as técnicas da pesca — tarrafa, espinhel, currico. Aprendeu a ler as marés, a identificar as espécies, a entender o que cada estação do Lagamar traz à superfície.</p>
+
+      <p class="reveal reveal-delay-2">A gastronomia veio depois. Mas nunca separada da pesca. Para Patrick, cozinhar é o prolongamento natural do ato de pescar — e desperdiçar qualquer parte do pescado é uma falta de respeito com o trabalho que custou trazê-lo até a superfície.</p>
+
+      <p class="reveal reveal-delay-3">Com o tempo, esse conhecimento se desdobrou em diferentes frentes de trabalho. As Experiências nasceram do desejo de compartilhar o território com quem nunca o viveu. Os Cursos e Mentorias nasceram da percepção de que técnicas aprendidas ao longo de décadas precisam ser transmitidas — não guardadas. E o Namazuko nasceu de uma pergunta simples: o que fazer com algo que o Lagamar sempre ofereceu, mas que ninguém aproveitava?</p>
+
+      <p class="reveal reveal-delay-3">As ovas de bagre branco, espécie nativa do estuário, raramente recebiam aproveitamento gastronômico relevante na pesca artesanal. Patrick desenvolveu um processo próprio de cura, inspirado em referências orientais, adaptado ao território onde nasceu e trabalha. Hoje o Namazuko é utilizado por restaurantes de alta gastronomia em diferentes regiões do Brasil — uma prova de que conhecimento territorial pode se transformar em criação autoral.</p>
+
+      <p class="reveal reveal-delay-4">Cananéia e Ilha Comprida não são o cenário do trabalho de Patrick. São a origem de cada experiência, cada aula, cada criação.</p>
+
+      <div class="flex-gap mt-lg reveal reveal-delay-4">
+        <a href="experiencias.html" class="btn btn--primary">Ver experiências</a>
+        <a href="cursos-mentorias.html" class="btn btn--ghost-dk">Conhecer cursos e mentorias</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- PROCESSO — GALERIA
+     [FOTOS] processo-01-pesca.jpg → processo-05-prato.jpg -->
+<section class="processo-section">
+  <div class="processo-intro reveal">
+    <span class="t-eyebrow">Do mar à mesa</span>
+    <h2 class="t-display" style="font-size:clamp(32px,4vw,52px);color:var(--c-creme);margin-top:14px">O processo.</h2>
+    <div class="divider divider--lt" style="margin-top:24px"></div>
+    <p class="t-body" style="color:rgba(245,240,230,.6);margin-top:0">Cada produto, cada prato e cada aula começam no Lagamar e passam pelas mãos de Patrick em cada etapa.</p>
+  </div>
+
+  <div class="galeria reveal">
+    <div class="galeria__item">
+      <img src="../assets/images/processo-01-pesca.jpg" alt="Etapa 1 — Pesca artesanal no Lagamar" loading="lazy">
+      <div class="galeria__item__caption">01 — Pesca</div>
+    </div>
+    <div class="galeria__item">
+      <img src="../assets/images/processo-02-limpeza.jpg" alt="Etapa 2 — Limpeza e seleção do pescado" loading="lazy">
+      <div class="galeria__item__caption">02 — Limpeza</div>
+    </div>
+    <div class="galeria__item">
+      <img src="../assets/images/processo-03-cura.jpg" alt="Etapa 3 — Processo de cura artesanal" loading="lazy">
+      <div class="galeria__item__caption">03 — Cura</div>
+    </div>
+    <div class="galeria__item">
+      <img src="../assets/images/processo-04-embalagem.jpg" alt="Etapa 4 — Embalagem artesanal" loading="lazy">
+      <div class="galeria__item__caption">04 — Embalagem</div>
+    </div>
+    <div class="galeria__item">
+      <img src="../assets/images/processo-05-prato.jpg" alt="Etapa 5 — Prato final" loading="lazy">
+      <div class="galeria__item__caption">05 — Mesa</div>
+    </div>
+  </div>
+  <span class="galeria-label reveal">← Arraste para explorar</span>
+</section>
+
+<!-- Split — Patrick em produção / cozinha
+     [FOTO] patrick-producao-charcutaria.jpg (manter nome de arquivo — ver MEDIA_MAP)
+     [FOTO] patrick-cozinha-fogo.jpg -->
+<div>
+  <div class="split">
+    <div class="split__image split__image--terra">
+      <img src="../assets/images/patrick-producao-charcutaria.jpg" alt="Patrick San na bancada de produção" loading="lazy">
+      <span class="split__image__caption">Bancada de produção · Cananéia</span>
+    </div>
+    <div class="split__content split__content--light">
+      <span class="t-eyebrow reveal">Técnica e território</span>
+      <h2 class="t-display reveal reveal-delay-1" style="font-size:clamp(30px,3.5vw,48px);margin-top:14px">O conhecimento<br><em>que se acumula.</em></h2>
+      <div class="divider reveal reveal-delay-2"></div>
+      <p class="t-body reveal reveal-delay-2" style="max-width:440px">Décadas de pesca, produção e cozinha resultaram em um repertório técnico que hoje sustenta três frentes: as Experiências que compartilham o território, os Cursos e Mentorias que transmitem a técnica, e criações autorais como o Namazuko que demonstram o que esse conhecimento pode gerar.</p>
+      <div class="mt-lg reveal reveal-delay-3">
+        <a href="cursos-mentorias.html" class="btn btn--primary">Conhecer cursos e mentorias</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="split split--reverse">
+    <div class="split__content split__content--dark">
+      <span class="t-eyebrow reveal">Namazuko</span>
+      <h2 class="t-display reveal reveal-delay-1" style="font-size:clamp(30px,3.5vw,48px);color:var(--c-creme);margin-top:14px">Uma criação<br><em>autoral.</em></h2>
+      <div class="divider divider--lt reveal reveal-delay-2"></div>
+      <p class="t-body reveal reveal-delay-2" style="max-width:440px;color:rgba(245,240,230,.62)">As ovas de bagre branco sempre existiram no Lagamar. Patrick foi o primeiro a desenvolver um processo de cura que as transforma em ingrediente gastronômico de alto valor — conectando a tradição da pesca caiçara com referências orientais de fermentação e cura.</p>
+      <div class="mt-lg reveal reveal-delay-3">
+        <a href="namazuko.html" class="btn btn--primary">Conhecer o Namazuko</a>
+      </div>
+    </div>
+    <div class="split__image split__image--mangue">
+      <img src="../assets/images/patrick-cozinha-fogo.jpg" alt="Patrick San cozinhando com fogo" loading="lazy">
+      <span class="split__image__caption">Cananéia · São Paulo</span>
+    </div>
+  </div>
+</div>
+
+<!-- VALORES -->
+<section class="processo-section">
+  <div class="processo-intro reveal">
+    <span class="t-eyebrow">Princípios</span>
+    <h2 class="t-display" style="font-size:clamp(32px,4vw,52px);color:var(--c-creme);margin-top:14px">O que orienta<br><em>o trabalho.</em></h2>
+  </div>
+  <div class="values-grid">
+    <div class="value-card reveal">
+      <span class="value-num">01</span>
+      <h3 class="value-title">Território como origem</h3>
+      <p class="value-body">Cananéia e Ilha Comprida não são o contexto do trabalho — são a origem de cada experiência, curso e criação. Tudo carrega a biodiversidade, a cultura e o conhecimento específico do Lagamar.</p>
+    </div>
+    <div class="value-card reveal reveal-delay-1">
+      <span class="value-num">02</span>
+      <h3 class="value-title">Conhecimento que se transmite</h3>
+      <p class="value-body">Técnica aprendida não deve ser guardada. Cursos, mentorias e treinamentos existem para que o conhecimento acumulado em décadas chegue a outras mãos.</p>
+    </div>
+    <div class="value-card reveal reveal-delay-2">
+      <span class="value-num">03</span>
+      <h3 class="value-title">Criação a partir do real</h3>
+      <p class="value-body">O Namazuko nasceu de uma pergunta sobre o que o território já oferecia. Criações autorais surgem da observação atenta do que existe — não da importação de tendências.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CTA FINAL — bifurcação da jornada
+     [FOTO] patrick-lagamar-perfil.jpg -->
+<section class="cta-section">
+  <div class="cta-inner">
+    <div class="reveal">
+      <span class="t-eyebrow">Próximos passos</span>
+      <h2 class="t-display" style="font-size:clamp(32px,4vw,52px);margin-top:14px">Viva, aprenda<br>ou <em>colabore.</em></h2>
+      <div class="divider"></div>
+      <p class="t-body" style="max-width:420px">As experiências são a forma mais direta de conhecer o trabalho de Patrick no território. Os cursos e mentorias são a forma de aprender a técnica. E para restaurantes, marcas e projetos, há sempre espaço para conversar.</p>
+      <div class="flex-gap mt-lg">
+        <a href="experiencias.html" class="btn btn--primary">Ver experiências</a>
+        <a href="contato.html" class="btn btn--ghost-dk">Entrar em contato</a>
+      </div>
+    </div>
+    <div class="reveal reveal-delay-1">
+      <img class="cta-img" src="../assets/images/patrick-lagamar-perfil.jpg" alt="Patrick San no Lagamar" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div>
+      <a href="../index.html" class="footer__brand-name">Patrick <span>San</span></a>
+      <p class="footer__brand-desc">Chef, pescador profissional e produtor artesanal. Cananéia e Ilha Comprida, litoral sul de São Paulo.</p>
+    </div>
+    <nav class="footer__col">
+      <span class="footer__col-title">Navegação</span>
+      <a href="territorio.html">Território</a>
+      <a href="patrick-san.html">Patrick San</a>
+      <a href="experiencias.html">Experiências</a>
+      <a href="cursos-mentorias.html">Cursos &amp; Mentorias</a>
+      <a href="namazuko.html">Namazuko</a>
+    </nav>
+    <nav class="footer__col">
+      <span class="footer__col-title">Ecossistema</span>
+      <a href="parcerias.html">Parcerias</a>
+      <a href="diario-do-lagamar.html">Diário do Lagamar</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+  <div class="footer__bottom">
+    <span class="footer__copy">© <span id="footer-year"></span> Patrick San · Cananéia, São Paulo</span>
+    <div class="footer__social">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>

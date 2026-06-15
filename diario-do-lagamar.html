@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Diário do Lagamar — histórias, cultura caiçara, espécies do estuário, bastidores da produção, experiências e conhecimento. A plataforma editorial de Patrick San.">
+  <meta property="og:title" content="Diário do Lagamar — Patrick San">
+  <meta property="og:image" content="../assets/images/diario-hero-patrick-caderno.jpg">
+  <title>Diário do Lagamar — Patrick San</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .featured-article { padding: var(--sp-2xl) var(--pad-x); background: var(--c-off); }
+    .featured-grid { display: grid; grid-template-columns: 1.3fr 1fr; gap: 64px; align-items: center; max-width: var(--max-w); margin: 0 auto; }
+    .featured-img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; }
+    .articles-section { padding: var(--sp-2xl) var(--pad-x); background: var(--c-creme); }
+    .articles-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; }
+    .article-card { position: relative; aspect-ratio: 3/4; overflow: hidden; cursor: pointer; }
+    .article-card__bg { position: absolute; inset: 0; transition: transform var(--t-slow) var(--ease); }
+    .article-card__bg img { width: 100%; height: 100%; object-fit: cover; }
+    .article-card:hover .article-card__bg { transform: scale(1.04); }
+    .article-card::before { content: ''; position: absolute; inset: 0; z-index: 1; background: linear-gradient(to top, rgba(8,8,6,.88) 0%, transparent 55%); }
+    .article-card__info { position: absolute; bottom: 0; left: 0; right: 0; z-index: 2; padding: 18px 18px 20px; }
+    .article-card__cat { font-size: 9px; letter-spacing: .15em; text-transform: uppercase; color: var(--c-areia); display: block; margin-bottom: 6px; }
+    .article-card__title { font-family: var(--f-display); font-size: 17px; font-weight: 400; color: var(--c-creme); line-height: 1.25; }
+    .categorias-section { padding: var(--sp-2xl) var(--pad-x); background: var(--c-mangue); }
+    .categorias-grid { display: grid; grid-template-columns: repeat(4,1fr); gap: 2px; margin-top: 48px; }
+    .categoria-item { background: rgba(245,240,230,.04); border: 1px solid rgba(245,240,230,.08); padding: 32px 28px; transition: background var(--t-fast); }
+    .categoria-item:hover { background: rgba(245,240,230,.07); }
+    .categoria-item__title { font-family: var(--f-display); font-size: 19px; color: var(--c-creme); margin-bottom: 8px; }
+    .categoria-item__desc { font-size: 12px; font-weight: 300; line-height: 1.7; color: rgba(245,240,230,.5); }
+    @media(max-width:1024px){ .articles-grid { grid-template-columns: repeat(2,1fr); } .categorias-grid { grid-template-columns: repeat(2,1fr); } }
+    @media(max-width:768px){
+      .featured-grid { grid-template-columns: 1fr; gap: 32px; }
+      .articles-grid, .categorias-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<a href="https://wa.me/55XXXXXXXXXXX" class="wa-float" title="Falar com Patrick San" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<nav class="nav" id="main-nav">
+  <a href="../index.html" class="nav__logo">Patrick <span>San</span></a>
+  <div class="nav__links">
+    <a href="territorio.html" class="nav__link">Território</a>
+    <a href="patrick-san.html" class="nav__link">Patrick San</a>
+    <a href="experiencias.html" class="nav__link">Experiências</a>
+    <a href="cursos-mentorias.html" class="nav__link">Cursos &amp; Mentorias</a>
+    <a href="namazuko.html" class="nav__link">Namazuko</a>
+    <a href="parcerias.html" class="nav__link">Parcerias</a>
+    <a href="diario-do-lagamar.html" class="nav__link active">Diário do Lagamar</a>
+    <a href="contato.html" class="nav__cta">Contato</a>
+  </div>
+  <button class="nav__hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</nav>
+<nav class="nav__mobile" id="nav-mobile">
+  <a href="territorio.html" class="nav__link">Território</a>
+  <a href="patrick-san.html" class="nav__link">Patrick San</a>
+  <a href="experiencias.html" class="nav__link">Experiências</a>
+  <a href="cursos-mentorias.html" class="nav__link">Cursos &amp; Mentorias</a>
+  <a href="namazuko.html" class="nav__link">Namazuko</a>
+  <a href="parcerias.html" class="nav__link">Parcerias</a>
+  <a href="diario-do-lagamar.html" class="nav__link">Diário do Lagamar</a>
+  <a href="contato.html" class="nav__cta">Contato</a>
+</nav>
+
+<!-- HERO
+     [FOTO] diario-hero-patrick-caderno.jpg (renomeado de sabores-hero-patrick-caderno.jpg) -->
+<div class="page-hero" style="margin-top:64px">
+  <div class="page-hero__media" style="background:linear-gradient(145deg,#1a2418,#2c3c24,#1e2c18)">
+    <img src="../assets/images/diario-hero-patrick-caderno.jpg" alt="Patrick San anotando observações sobre o território" loading="eager">
+  </div>
+  <div class="page-hero__overlay"></div>
+  <div class="page-hero__content">
+    <span class="page-hero__eyebrow">Plataforma editorial</span>
+    <h1 class="page-hero__title">Diário do<br><em>Lagamar.</em></h1>
+  </div>
+</div>
+
+<!-- ARTIGO EM DESTAQUE
+     [FOTO] artigo-destaque-capa.jpg -->
+<section class="featured-article">
+  <div class="featured-grid">
+    <div class="reveal">
+      <img class="featured-img" src="../assets/images/artigo-destaque-capa.jpg" alt="Artigo em destaque — Diário do Lagamar">
+    </div>
+    <div class="reveal reveal-delay-1">
+      <span class="t-eyebrow">Em destaque</span>
+      <h2 class="t-display" style="font-size:clamp(28px,3.5vw,44px);margin-top:14px;font-style:italic;opacity:.7">[VALIDAR COM PATRICK: título do primeiro artigo]</h2>
+      <div class="divider"></div>
+      <p class="t-body" style="max-width:420px;font-style:italic;color:var(--c-txt-t)">[VALIDAR COM PATRICK: texto e conteúdo do primeiro artigo do Diário do Lagamar.]</p>
+      <div class="mt-lg">
+        <span class="btn--text btn--text-dk" style="cursor:default;opacity:.5">Ler artigo →</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GRID DE ARTIGOS POR CATEGORIA, com tags por frente -->
+<section class="articles-section">
+  <div style="max-width:var(--max-w);margin:0 auto 48px">
+    <span class="t-eyebrow reveal">Diário do Lagamar</span>
+    <h2 class="t-display reveal reveal-delay-1" style="font-size:clamp(30px,4vw,48px);margin-top:14px">Histórias do<br><em>território.</em></h2>
+  </div>
+  <div class="articles-grid">
+    <article class="article-card reveal">
+      <div class="article-card__bg" style="background:linear-gradient(145deg,#141e16,#202e1e,#182818)">
+        <img src="../assets/images/artigo-pesca-tainha-capa.jpg" alt="A pesca da tainha e o conhecimento que o mar ensinou" loading="lazy">
+      </div>
+      <div class="article-card__info">
+        <span class="article-card__cat">Cultura Caiçara</span>
+        <h3 class="article-card__title">A pesca da tainha e o conhecimento que o mar ensinou</h3>
+        <div class="article-card__tags">
+          <span>Território</span>
+          <span>Experiências</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card reveal reveal-delay-1">
+      <div class="article-card__bg" style="background:linear-gradient(145deg,#1e1208,#2e1c0c,#241408)">
+        <img src="../assets/images/artigo-namazuko-processo-capa.jpg" alt="Da ova ao produto: o processo das Namazuko" loading="lazy">
+      </div>
+      <div class="article-card__info">
+        <span class="article-card__cat">Bastidores da Produção</span>
+        <h3 class="article-card__title">Da ova ao produto: o processo das Namazuko</h3>
+        <div class="article-card__tags">
+          <span>Namazuko</span>
+          <span>Cursos</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card reveal reveal-delay-2">
+      <div class="article-card__bg" style="background:linear-gradient(145deg,#0a1018,#14202e,#0e1a28)">
+        <img src="../assets/images/artigo-bagre-branco-capa.jpg" alt="Bagre branco: o peixe que a gastronomia ainda não conhece" loading="lazy">
+      </div>
+      <div class="article-card__info">
+        <span class="article-card__cat">Espécies do Estuário</span>
+        <h3 class="article-card__title">Bagre branco: o peixe que a gastronomia ainda não conhece</h3>
+        <div class="article-card__tags">
+          <span>Território</span>
+          <span>Namazuko</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card reveal reveal-delay-3">
+      <div class="article-card__bg" style="background:linear-gradient(145deg,#1a160c,#2c2414,#201c10)">
+        <img src="../assets/images/artigo-namazuko-tecnica-capa.jpg" alt="A técnica de maturação aplicada ao Namazuko" loading="lazy">
+      </div>
+      <div class="article-card__info">
+        <span class="article-card__cat">Namazuko &amp; Técnica</span>
+        <h3 class="article-card__title">A técnica de maturação aplicada ao Namazuko</h3>
+        <div class="article-card__tags">
+          <span>Namazuko</span>
+          <span>Cursos</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card reveal">
+      <div class="article-card__bg" style="background:linear-gradient(145deg,#10180e,#1c2c18,#141e10)">
+        <img src="../assets/images/artigo-comunidade-caicara-capa.jpg" alt="Vozes da comunidade caiçara de Cananéia" loading="lazy">
+      </div>
+      <div class="article-card__info">
+        <span class="article-card__cat">Histórias de Pescadores</span>
+        <h3 class="article-card__title">Vozes da comunidade caiçara de Cananéia</h3>
+        <div class="article-card__tags">
+          <span>Território</span>
+          <span>Experiências</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card reveal reveal-delay-1">
+      <div class="article-card__bg" style="background:linear-gradient(145deg,#0c1c14,#182c20,#0e2218)">
+        <img src="../assets/images/artigo-mangue-biodiversidade-capa.jpg" alt="O mangue e a biodiversidade do Lagamar" loading="lazy">
+      </div>
+      <div class="article-card__info">
+        <span class="article-card__cat">Território</span>
+        <h3 class="article-card__title">O mangue e a biodiversidade do Lagamar</h3>
+        <div class="article-card__tags">
+          <span>Território</span>
+          <span>Experiências</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card reveal reveal-delay-2">
+      <div class="article-card__bg" style="background:linear-gradient(145deg,#1c1008,#2e1c0e,#241408)">
+        <img src="../assets/images/artigo-receita-defumado-capa.jpg" alt="Gastronomia de território" loading="lazy">
+      </div>
+      <div class="article-card__info">
+        <span class="article-card__cat">Gastronomia de Território</span>
+        <h3 class="article-card__title" style="font-style:italic;opacity:.7">[CONTEÚDO A DEFINIR — nova pauta]</h3>
+        <div class="article-card__tags">
+          <span>Território</span>
+          <span>Namazuko</span>
+        </div>
+      </div>
+    </article>
+    <article class="article-card reveal reveal-delay-3">
+      <div class="article-card__bg" style="background:linear-gradient(145deg,#141a1e,#222e34,#182228)">
+        <img src="../assets/images/artigo-historia-canania-capa.jpg" alt="A história de Cananéia e seu patrimônio" loading="lazy">
+      </div>
+      <div class="article-card__info">
+        <span class="article-card__cat">Patrimônio Cultural</span>
+        <h3 class="article-card__title">A história de Cananéia e seu patrimônio</h3>
+        <div class="article-card__tags">
+          <span>Território</span>
+        </div>
+      </div>
+    </article>
+  </div>
+  <p style="font-size:11px;font-style:italic;color:var(--c-txt-t);margin-top:24px;text-align:center">Artigos a publicar na primeira versão — conteúdo a desenvolver com Patrick San. O artigo de "Gastronomia de Território" precisa de nova pauta (o conteúdo anterior remetia à linha descontinuada de Charcutaria do Mar).</p>
+</section>
+
+<!-- CATEGORIAS EDITORIAIS — sem "Charcutaria do Mar" -->
+<section class="categorias-section">
+  <div style="max-width:var(--max-w);margin:0 auto 0">
+    <span class="t-eyebrow reveal">Explore por categoria</span>
+    <h2 class="t-display reveal reveal-delay-1" style="font-size:clamp(30px,4vw,48px);color:var(--c-creme);margin-top:14px">O que você vai<br>encontrar aqui.</h2>
+    <div class="categorias-grid">
+      <div class="categoria-item reveal">
+        <h3 class="categoria-item__title">Cultura Caiçara</h3>
+        <p class="categoria-item__desc">Modo de vida, festividades, saberes ancestrais e a identidade do litoral sul de São Paulo.</p>
+      </div>
+      <div class="categoria-item reveal reveal-delay-1">
+        <h3 class="categoria-item__title">Espécies do Estuário</h3>
+        <p class="categoria-item__desc">Cada espécie do Lagamar — biologia, pesca e seu lugar na gastronomia.</p>
+      </div>
+      <div class="categoria-item reveal reveal-delay-2">
+        <h3 class="categoria-item__title">Namazuko &amp; Técnica</h3>
+        <p class="categoria-item__desc">O processo de cura e maturação por trás da criação autoral de Patrick San.</p>
+      </div>
+      <div class="categoria-item reveal reveal-delay-3">
+        <h3 class="categoria-item__title">Histórias de Pescadores</h3>
+        <p class="categoria-item__desc">Memórias e relatos da pesca artesanal de Cananéia e Ilha Comprida.</p>
+      </div>
+      <div class="categoria-item reveal">
+        <h3 class="categoria-item__title">Bastidores da Produção</h3>
+        <p class="categoria-item__desc">O processo por trás de cada criação — do Lagamar ao resultado final.</p>
+      </div>
+      <div class="categoria-item reveal reveal-delay-1">
+        <h3 class="categoria-item__title">Território</h3>
+        <p class="categoria-item__desc">O Lagamar, o mangue e a biodiversidade que sustentam tudo.</p>
+      </div>
+      <div class="categoria-item reveal reveal-delay-2">
+        <h3 class="categoria-item__title">Gastronomia de Território</h3>
+        <p class="categoria-item__desc">Receitas, técnicas e usos práticos do que o território oferece.</p>
+      </div>
+      <div class="categoria-item reveal reveal-delay-3">
+        <h3 class="categoria-item__title">Patrimônio Cultural</h3>
+        <p class="categoria-item__desc">A história de Cananéia e Ilha Comprida e seu reconhecimento pela UNESCO.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PONTE — Diário conecta a todas as frentes -->
+<section class="ponte">
+  <span class="ponte__eyebrow reveal">O tecido conjuntivo</span>
+  <h2 class="ponte__title reveal reveal-delay-1">Cada artigo leva a uma <em>frente.</em></h2>
+  <p class="t-body reveal reveal-delay-2" style="max-width:480px;margin:0 auto">As tags de cada artigo conectam o Diário do Lagamar às experiências, cursos, ao Namazuko e às parcerias.</p>
+  <div class="ponte__links reveal reveal-delay-3">
+    <a href="experiencias.html" class="ponte__link">
+      <span class="ponte__link-icon">01</span>
+      <span class="ponte__link-label">Experiências</span>
+    </a>
+    <a href="cursos-mentorias.html" class="ponte__link">
+      <span class="ponte__link-icon">02</span>
+      <span class="ponte__link-label">Cursos &amp; Mentorias</span>
+    </a>
+    <a href="namazuko.html" class="ponte__link">
+      <span class="ponte__link-icon">03</span>
+      <span class="ponte__link-label">Namazuko</span>
+    </a>
+    <a href="territorio.html" class="ponte__link">
+      <span class="ponte__link-icon">04</span>
+      <span class="ponte__link-label">Território</span>
+    </a>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section class="newsletter" id="newsletter">
+  <span class="t-eyebrow text-center reveal" style="display:block;margin-bottom:12px">Diário do Lagamar</span>
+  <h2 class="t-display newsletter__title reveal reveal-delay-1" style="font-size:clamp(30px,4vw,50px)">Receba as próximas<br><em>histórias.</em></h2>
+  <p class="newsletter__sub reveal reveal-delay-2">Uma vez por mês — o que acontece no Lagamar, direto de Cananéia e Ilha Comprida.</p>
+  <form class="newsletter__form reveal reveal-delay-3" id="newsletter-form" novalidate>
+    <input type="email" name="email" class="newsletter__input" placeholder="Seu e-mail" required aria-label="Seu e-mail">
+    <button type="submit" class="newsletter__submit">Assinar</button>
+  </form>
+  <p class="newsletter__nota reveal">Sem spam. Cancele quando quiser.</p>
+</section>
+
+<footer class="footer">
+  <div class="footer__grid">
+    <div>
+      <a href="../index.html" class="footer__brand-name">Patrick <span>San</span></a>
+      <p class="footer__brand-desc">Chef, pescador profissional e produtor artesanal. Cananéia e Ilha Comprida, litoral sul de São Paulo.</p>
+    </div>
+    <nav class="footer__col">
+      <span class="footer__col-title">Navegação</span>
+      <a href="territorio.html">Território</a>
+      <a href="patrick-san.html">Patrick San</a>
+      <a href="experiencias.html">Experiências</a>
+      <a href="cursos-mentorias.html">Cursos &amp; Mentorias</a>
+      <a href="namazuko.html">Namazuko</a>
+    </nav>
+    <nav class="footer__col">
+      <span class="footer__col-title">Ecossistema</span>
+      <a href="parcerias.html">Parcerias</a>
+      <a href="diario-do-lagamar.html">Diário do Lagamar</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </div>
+  <div class="footer__bottom">
+    <span class="footer__copy">© <span id="footer-year"></span> Patrick San · Cananéia, São Paulo</span>
+    <div class="footer__social">
+      <a href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://wa.me/55XXXXXXXXXXX" target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/script.js"></script>
+</body>
+</html>
